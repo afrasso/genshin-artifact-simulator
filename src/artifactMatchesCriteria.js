@@ -1,7 +1,7 @@
 const _ = require("lodash");
 
 module.exports = ({ artifact, artifactCriteria, set }) => {
-  if (set && set !== artifact.set) {
+  if (set && set.name !== artifact.set) {
     return false;
   }
   if (artifactCriteria.type && artifactCriteria.type !== artifact.type) {

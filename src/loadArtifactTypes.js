@@ -17,7 +17,7 @@ artifactTypes.forEach((type) => {
       substat.rngMax = substatRngMin + substat.chance;
       substatRngMin = substat.rngMax;
     });
-    statRngMin = type.rngMax;
+    statRngMin = stat.rngMax;
   });
   typeRngMin = type.rngMax;
 });

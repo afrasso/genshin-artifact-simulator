@@ -6,7 +6,7 @@ dropRates:
     domain:
         -
             stars: 3
-            drops:
+            dropCounts:
                 -
                     num: 3
                     chance: 0.45
@@ -15,7 +15,7 @@ dropRates:
                     chance: 0.55
         -
             stars: 4
-            drops:
+            dropCounts:
                 -
                     num: 2
                     chance: 0.52
@@ -24,7 +24,7 @@ dropRates:
                     chance: 0.48
         -
             stars: 5
-            drops:
+            dropCounts:
                 -
                     num: 1
                     chance: 0.93
@@ -34,7 +34,7 @@ dropRates:
     boss:
         -
             stars: 3
-            drops:
+            dropCounts:
                 -
                     num: 2
                     chance: 0.9
@@ -43,7 +43,7 @@ dropRates:
                     chance: 0.1
         -
             stars: 4
-            drops:
+            dropCounts:
                 -
                     num: 1
                     chance: 0.53
@@ -52,7 +52,7 @@ dropRates:
                     chance: 0.47
         -
             stars: 5
-            drops:
+            dropCounts:
                 -
                     num: 1
                     chance: 1

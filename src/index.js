@@ -1,51 +1,26 @@
 const _ = require("lodash");
 const fs = require("fs");
 const yaml = require("js-yaml");
+
 const { sets } = require("./loadSets.js");
-const { artifactTypes } = require("./loadArtifactTypes.js");
+
+const artifactMatchesCriteria = require("./artifactMatchesCriteria.js");
+const farmArtifacts = require("./farmArtifacts.js");
 const findMatchingArtifactsForCharacter = require("./findMatchingArtifactsForCharacter.js");
 const logCharacter = require("./logCharacter.js");
-const artifactMatchesCriteria = require("./artifactMatchesCriteria.js");
-
-// const otherData = fs.readFileSync("./data/other.yaml");
-// const { artifactXp, fourSubstatsChance, dropRates } = yaml.load(otherData);
 
 const charactersData = fs.readFileSync("./data/characters.yaml");
 const characters = yaml.load(charactersData);
 
+characters.forEach((character) => {
+  character.set1 = _.find(sets, (set) => set.name === character.set1);
+  if (character.set2) {
+    character.set2 = _.find(sets, (set) => set.name === character.set2);
+  }
+});
+
 const artifactsData = fs.readFileSync("./data/artifacts.yaml");
 const artifacts = yaml.load(artifactsData);
-
-const farmForArtifacts = ({ dropRates, sourceType, domain }) => {
-  const dropRate = _.find(dropRates[sourceType], (dr) => dr.stars === 5);
-  const drops =
-    Math.random() < _.head(dropRate.drops)
-      ? _.head(dropRate.drops)
-      : _.head(_.tail(dropRate.drops));
-  return _.times(
-    drops.num,
-    generateArtifact({
-      set:
-        Math.random() < 0.5 ? _.head(domain.sets) : _.head(_.tail(domain.sets)),
-      artifactDropRates: dropRate,
-    })
-  );
-};
-
-const generateArtifact = ({ set, artifactDropRates }) => {
-  const typeRng = Math.random();
-  const statRng = Math.random();
-  // const substatRng = Math.random();
-  const type = _.find(
-    artifactDropRates.types,
-    (type) => typeRng >= type.rngMin && typeRng < type.rngMax
-  );
-  const stat = _.find(
-    type.stats,
-    (stat) => statRng >= stat.rngMin && statRng < stat.rngMax
-  );
-  return { set, type: type.name, stat: stat.name };
-};
 
 characters.forEach((character) => {
   const matchingArtifacts = findMatchingArtifactsForCharacter({
@@ -56,48 +31,73 @@ characters.forEach((character) => {
 });
 
 characters.forEach((character) => {
-  const matchingArtifacts = findMatchingArtifactsForCharacter({
-    character,
-    artifacts,
-  });
-  if (
-    _.filter(
-      matchingArtifacts.artifacts,
-      (artifact) => artifact.set === character.set1
-    ).length < 2
-  ) {
-    const artifactCriteria = _.head(matchingArtifacts.missingArtifactsCriteria);
-    const set = _.find(sets, character.set1);
+  console.log(`Working on ${character.name}!`);
+  let matchingArtifacts;
+  let totalResinSpent = 0;
+  while (_.size(character.artifacts) < 5) {
+    const artifactCriteria = _.head(character.missingArtifactsCriteria);
+    if (
+      artifactCriteria.stat === "HP%" &&
+      (artifactCriteria.type === "feather" ||
+        artifactCriteria.type === "flower")
+    ) {
+      console.log("WTF");
+    }
+    const set1ArtifactCount = _.filter(
+      character.artifacts,
+      (artifact) => artifact.set === character.set1.name
+    ).length;
+    const set2ArtifactCount = character.set2
+      ? _.filter(
+          character.artifacts,
+          (artifact) => artifact.set === character.set2.name
+        ).length
+      : 0;
+    let set;
+    if (
+      (_.isUndefined(character.set2) && set1ArtifactCount < 4) ||
+      set1ArtifactCount < 2
+    ) {
+      set = character.set1;
+    } else if (!_.isUndefined(character.set2) && set2ArtifactCount < 2) {
+      set = character.set2;
+    }
     let newArtifacts = [];
     let cumulativeNewArtifacts = [];
     while (
-      _.find(newArtifacts, (artifact) =>
-        artifactMatchesCriteria({ artifact, artifactCriteria })
+      _.isEmpty(
+        _.intersectionWith(
+          newArtifacts,
+          character.missingArtifactsCriteria,
+          (artifact, artifactCriteria) =>
+            artifactMatchesCriteria({ artifact, artifactCriteria, set })
+        )
       )
     ) {
-      newArtifacts = farmForArtifacts({
-        artifactCriteria: _.head(matchingArtifacts.missingArtifactsCriteria),
-        sourceType: set.sourceType,
-        source: set.source,
-      });
+      const results = farmArtifacts({ set });
+      newArtifacts = results.artifacts;
+      totalResinSpent += results.resinCost;
       cumulativeNewArtifacts.push(...newArtifacts);
+      // if (totalResinSpent % 1000 === 0) {
+      //   console.log("1K more resin spent!");
+      // }
+      // if (totalResinSpent % 100000 === 0) {
+      //   console.log("uh oh");
+      // }
     }
-    const newMatchingArtifacts = findMatchingArtifactsForCharacter({
+    artifacts.push(...cumulativeNewArtifacts);
+    // console.log("Pre-matching artifacts");
+    // console.log(character.artifacts);
+    // console.log(character.missingArtifactsCriteria);
+    matchingArtifacts = findMatchingArtifactsForCharacter({
       character,
-      artifacts: [...artifacts, ...cumulativeNewArtifacts],
+      artifacts,
     });
-
-    console.log(`For ${character.name}:`);
-    console.log("  Found the following artifacts:");
-    newMatchingArtifacts.artifacts.forEach((artifact) => {
-      console.log(`    ${JSON.stringify(artifact)}`);
-    });
-    console.log("  Need the following artifacts:");
-    newMatchingArtifacts.missingArtifactsCriteria.forEach((criteria) => {
-      console.log(`    ${JSON.stringify(criteria)}`);
-    });
-    newMatchingArtifacts.artifacts.forEach((artifact) => {
-      artifact.owner = character.name;
-    });
+    // console.log("Post-matching artifacts");
+    // console.log(character.artifacts);
+    // console.log(character.missingArtifactsCriteria);
+    // console.log("just here for the shits");
   }
+  console.log(`${totalResinSpent} spent.`);
+  logCharacter({ character, matchingArtifacts });
 });

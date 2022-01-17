@@ -28,7 +28,7 @@
                     name: Elemental Mastery
                     chance: 0.1053
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.0789
                 -
                     name: CRIT DMG%
@@ -63,7 +63,7 @@
                     name: Elemental Mastery
                     chance: 0.1053
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.0789
                 -
                     name: CRIT DMG%
@@ -98,7 +98,7 @@
                     name: Elemental Mastery
                     chance: 0.1
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.075
                 -
                     name: CRIT DMG%
@@ -129,7 +129,7 @@
                     name: Elemental Mastery
                     chance: 0.1
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.075
                 -
                     name: CRIT DMG%
@@ -160,7 +160,7 @@
                     name: Elemental Mastery
                     chance: 0.1
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.075
                 -
                     name: CRIT DMG%
@@ -191,7 +191,7 @@
                     name: Elemental Mastery
                     chance: 0.1
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.075
                 -
                     name: CRIT DMG%
@@ -222,7 +222,7 @@
                     name: Energy Recharge%
                     chance: 0.1
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.075
                 -
                     name: CRIT DMG%
@@ -257,7 +257,7 @@
                     name: Elemental Mastery
                     chance: 0.1
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.075
                 -
                     name: CRIT DMG%
@@ -288,7 +288,7 @@
                     name: Elemental Mastery
                     chance: 0.1
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.075
                 -
                     name: CRIT DMG%
@@ -319,7 +319,7 @@
                     name: Elemental Mastery
                     chance: 0.1
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.075
                 -
                     name: CRIT DMG%
@@ -353,7 +353,7 @@
                     name: Elemental Mastery
                     chance: 0.0909
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.0682
                 -
                     name: CRIT DMG%
@@ -387,7 +387,7 @@
                     name: Elemental Mastery
                     chance: 0.0909
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.0682
                 -
                     name: CRIT DMG%
@@ -421,7 +421,7 @@
                     name: Elemental Mastery
                     chance: 0.0909
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.0682
                 -
                     name: CRIT DMG%
@@ -455,7 +455,7 @@
                     name: Elemental Mastery
                     chance: 0.0909
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.0682
                 -
                     name: CRIT DMG%
@@ -489,7 +489,7 @@
                     name: Elemental Mastery
                     chance: 0.0909
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.0682
                 -
                     name: CRIT DMG%
@@ -523,7 +523,7 @@
                     name: Elemental Mastery
                     chance: 0.0909
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.0682
                 -
                     name: CRIT DMG%
@@ -557,7 +557,7 @@
                     name: Elemental Mastery
                     chance: 0.0909
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.0682
                 -
                     name: CRIT DMG%
@@ -588,7 +588,7 @@
                     name: Energy Recharge%
                     chance: 0.1
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.075
                 -
                     name: CRIT DMG%
@@ -598,7 +598,7 @@
     chance: 0.2
     stats:
         -
-            name: HP
+            name: HP%
             chance: 0.22
             substats:
                 -
@@ -623,7 +623,7 @@
                     name: Elemental Mastery
                     chance: 0.1
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.075
                 -
                     name: CRIT DMG%
@@ -654,7 +654,7 @@
                     name: Elemental Mastery
                     chance: 0.1
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.075
                 -
                     name: CRIT DMG%
@@ -685,13 +685,13 @@
                     name: Elemental Mastery
                     chance: 0.1
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.075
                 -
                     name: CRIT DMG%
                     chance: 0.075
         -
-            name: CRIT chance%
+            name: CRIT Rate%
             chance: 0.1
             substats:
                 -
@@ -750,7 +750,7 @@
                     name: Elemental Mastery
                     chance: 0.0976
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.0732
         -
             name: Healing Bonus%
@@ -781,7 +781,7 @@
                     name: Elemental Mastery
                     chance: 0.0909
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.0682
                 -
                     name: CRIT DMG%
@@ -812,7 +812,7 @@
                     name: Energy Recharge%
                     chance: 0.1
                 -
-                    name: CRIT chance%
+                    name: CRIT Rate%
                     chance: 0.075
                 -
                     name: CRIT DMG%
