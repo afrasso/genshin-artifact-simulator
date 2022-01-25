@@ -1,13 +1,24 @@
 {
   "name": "genshin-artifact-simulator",
+  "description": "Simulates artifact farming in Genshin Impact.",
+  "keywords": [
+    "genshin",
+    "impact",
+    "artifact",
+    "farming",
+    "simulator"
+  ],
+  "author": "Anthony Frasso <anf4@cornell.edu>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afrasso/genshin-artifact-simulator.git"
+  },
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pretest": "prettier --write ./src && eslint ./src"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "js-yaml": "^4.1.0",
@@ -17,6 +28,7 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "percentile": "^1.6.0",
     "prettier": "2.5.1"
   }
 }

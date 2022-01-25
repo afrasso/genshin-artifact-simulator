@@ -1,0 +1,79 @@
+- name: Albedo
+  set1: Husk of Opulent Dreams
+  artifactCriteria:
+    - type: flower
+    - type: feather
+    - type: sands
+      stat: DEF%
+    - type: goblet
+      stat: DEF%
+    - type: circlet
+      stat: DEF%
+- name: Bennett
+  set1: Noblesse Oblige
+  artifactCriteria:
+    - type: flower
+    - type: feather
+    - type: sands
+      stat: Energy Recharge%
+    - type: goblet
+      stat: HP%
+    - type: circlet
+      stat: Healing Bonus%
+- name: Xiangling
+  set1: Emblem of Severed Fate
+  artifactCriteria:
+    - type: flower
+    - type: feather
+    - type: sands
+      stat: Energy Recharge%
+    - type: goblet
+      stat: Pyro DMG Bonus%
+    - type: circlet
+      stat: CRIT DMG%
+- name: Jean
+  set1: Viridescent Veneer
+  artifactCriteria:
+    - type: flower
+    - type: feather
+    - type: sands
+      stat: ATK%
+    - type: goblet
+      stat: ATK%
+    - type: circlet
+      stat: ATK%
+- name: Sucrose
+  set1: Viridescent Veneer
+  artifactCriteria:
+    - type: flower
+    - type: feather
+    - type: sands
+      stat: Energy Recharge%
+    - type: goblet
+      stat: Anemo DMG Bonus%
+    - type: circlet
+      stat: Elemental Mastery
+- name: Yanfei
+  set1: Emblem of Severed Fate
+  set2: Tenacity of the Millelith
+  artifactCriteria:
+    - type: flower
+    - type: feather
+    - type: sands
+      stat: HP%
+    - type: goblet
+      stat: HP%
+    - type: circlet
+      stat: HP%
+- name: Chongyun
+  set1: Blizzard Strayer
+  set2: Noblesse Oblige
+  artifactCriteria:
+    - type: flower
+    - type: feather
+    - type: sands
+      stat: Energy Recharge%
+    - type: goblet
+      stat: Cryo DMG Bonus%
+    - type: circlet
+      stat: CRIT Rate%

@@ -1,819 +1,556 @@
--
-    name: flower
-    chance: 0.2
-    stats:
-        -
-            name: HP
-            chance: 1
-            substats:
-                -
-                    name: ATK
-                    chance: 0.1579
-                -
-                    name: DEF
-                    chance: 0.1579
-                -
-                    name: HP%
-                    chance: 0.1053
-                -
-                    name: ATK%
-                    chance: 0.1053
-                -
-                    name: DEF%
-                    chance: 0.1053
-                -
-                    name: Energy Recharge%
-                    chance: 0.1053
-                -
-                    name: Elemental Mastery
-                    chance: 0.1053
-                -
-                    name: CRIT Rate%
-                    chance: 0.0789
-                -
-                    name: CRIT DMG%
-                    chance: 0.0789
--
-    name: feather
-    chance: 0.2
-    stats:
-        -
-            name: ATK
-            chance: 1
-            substats:
-                -
-                    name: HP
-                    chance: 0.1579
-                -
-                    name: DEF
-                    chance: 0.1579
-                -
-                    name: HP%
-                    chance: 0.1053
-                -
-                    name: ATK%
-                    chance: 0.1053
-                -
-                    name: DEF%
-                    chance: 0.1053
-                -
-                    name: Energy Recharge%
-                    chance: 0.1053
-                -
-                    name: Elemental Mastery
-                    chance: 0.1053
-                -
-                    name: CRIT Rate%
-                    chance: 0.0789
-                -
-                    name: CRIT DMG%
-                    chance: 0.0789
--
-    name: sands
-    chance: 0.2
-    stats:
-        -
-            name: HP%
-            chance: 0.2668
-            substats:
-                -
-                    name: HP
-                    chance: 0.15
-                -
-                    name: ATK
-                    chance: 0.15
-                -
-                    name: DEF
-                    chance: 0.15
-                -
-                    name: ATK%
-                    chance: 0.1
-                -
-                    name: DEF%
-                    chance: 0.1
-                -
-                    name: Energy Recharge%
-                    chance: 0.1
-                -
-                    name: Elemental Mastery
-                    chance: 0.1
-                -
-                    name: CRIT Rate%
-                    chance: 0.075
-                -
-                    name: CRIT DMG%
-                    chance: 0.075
-        -
-            name: ATK%
-            chance: 0.2666
-            substats:
-                -
-                    name: HP
-                    chance: 0.15
-                -
-                    name: ATK
-                    chance: 0.15
-                -
-                    name: DEF
-                    chance: 0.15
-                -
-                    name: HP%
-                    chance: 0.1
-                -
-                    name: DEF%
-                    chance: 0.1
-                -
-                    name: Energy Recharge%
-                    chance: 0.1
-                -
-                    name: Elemental Mastery
-                    chance: 0.1
-                -
-                    name: CRIT Rate%
-                    chance: 0.075
-                -
-                    name: CRIT DMG%
-                    chance: 0.075
-        -
-            name: DEF%
-            chance: 0.2666
-            substats:
-                -
-                    name: HP
-                    chance: 0.15
-                -
-                    name: ATK
-                    chance: 0.15
-                -
-                    name: DEF
-                    chance: 0.15
-                -
-                    name: HP%
-                    chance: 0.1
-                -
-                    name: ATK%
-                    chance: 0.1
-                -
-                    name: Energy Recharge%
-                    chance: 0.1
-                -
-                    name: Elemental Mastery
-                    chance: 0.1
-                -
-                    name: CRIT Rate%
-                    chance: 0.075
-                -
-                    name: CRIT DMG%
-                    chance: 0.075
-        -
-            name: Energy Recharge%
-            chance: 0.1
-            substats:
-                -
-                    name: HP
-                    chance: 0.15
-                -
-                    name: ATK
-                    chance: 0.15
-                -
-                    name: DEF
-                    chance: 0.15
-                -
-                    name: HP%
-                    chance: 0.1
-                -
-                    name: ATK%
-                    chance: 0.1
-                -
-                    name: DEF%
-                    chance: 0.1
-                -
-                    name: Elemental Mastery
-                    chance: 0.1
-                -
-                    name: CRIT Rate%
-                    chance: 0.075
-                -
-                    name: CRIT DMG%
-                    chance: 0.075
-        -
-            name: Elemental Mastery
-            chance: 0.1
-            substats:
-                -
-                    name: HP
-                    chance: 0.15
-                -
-                    name: ATK
-                    chance: 0.15
-                -
-                    name: DEF
-                    chance: 0.15
-                -
-                    name: HP%
-                    chance: 0.1
-                -
-                    name: ATK%
-                    chance: 0.1
-                -
-                    name: DEF%
-                    chance: 0.1
-                -
-                    name: Energy Recharge%
-                    chance: 0.1
-                -
-                    name: CRIT Rate%
-                    chance: 0.075
-                -
-                    name: CRIT DMG%
-                    chance: 0.075
--
-    name: goblet
-    chance: 0.2
-    stats:
-        -
-            name: HP%
-            chance: 0.2125
-            substats:
-                -
-                    name: HP
-                    chance: 0.15
-                -
-                    name: ATK
-                    chance: 0.15
-                -
-                    name: DEF
-                    chance: 0.15
-                -
-                    name: ATK%
-                    chance: 0.1
-                -
-                    name: DEF%
-                    chance: 0.1
-                -
-                    name: Energy Recharge%
-                    chance: 0.1
-                -
-                    name: Elemental Mastery
-                    chance: 0.1
-                -
-                    name: CRIT Rate%
-                    chance: 0.075
-                -
-                    name: CRIT DMG%
-                    chance: 0.075
-        -
-            name: ATK%
-            chance: 0.2125
-            substats:
-                -
-                    name: HP
-                    chance: 0.15
-                -
-                    name: ATK
-                    chance: 0.15
-                -
-                    name: DEF
-                    chance: 0.15
-                -
-                    name: HP%
-                    chance: 0.1
-                -
-                    name: DEF%
-                    chance: 0.1
-                -
-                    name: Energy Recharge%
-                    chance: 0.1
-                -
-                    name: Elemental Mastery
-                    chance: 0.1
-                -
-                    name: CRIT Rate%
-                    chance: 0.075
-                -
-                    name: CRIT DMG%
-                    chance: 0.075
-        -
-            name: DEF%
-            chance: 0.2
-            substats:
-                -
-                    name: HP
-                    chance: 0.15
-                -
-                    name: ATK
-                    chance: 0.15
-                -
-                    name: DEF
-                    chance: 0.15
-                -
-                    name: HP%
-                    chance: 0.1
-                -
-                    name: ATK%
-                    chance: 0.1
-                -
-                    name: Energy Recharge%
-                    chance: 0.1
-                -
-                    name: Elemental Mastery
-                    chance: 0.1
-                -
-                    name: CRIT Rate%
-                    chance: 0.075
-                -
-                    name: CRIT DMG%
-                    chance: 0.075
-        -
-            name: Pyro DMG Bonus%
-            chance: 0.05
-            substats:
-                -
-                    name: HP
-                    chance: 0.1364
-                -
-                    name: ATK
-                    chance: 0.1364
-                -
-                    name: DEF
-                    chance: 0.1364
-                -
-                    name: HP%
-                    chance: 0.0909
-                -
-                    name: ATK%
-                    chance: 0.0909
-                -
-                    name: DEF
-                    chance: 0.0909
-                -
-                    name: Energy Recharge%
-                    chance: 0.0909
-                -
-                    name: Elemental Mastery
-                    chance: 0.0909
-                -
-                    name: CRIT Rate%
-                    chance: 0.0682
-                -
-                    name: CRIT DMG%
-                    chance: 0.0682
-        -
-            name: Electro DMG Bonus%
-            chance: 0.05
-            substats:
-                -
-                    name: HP
-                    chance: 0.1364
-                -
-                    name: ATK
-                    chance: 0.1364
-                -
-                    name: DEF
-                    chance: 0.1364
-                -
-                    name: HP%
-                    chance: 0.0909
-                -
-                    name: ATK%
-                    chance: 0.0909
-                -
-                    name: DEF
-                    chance: 0.0909
-                -
-                    name: Energy Recharge%
-                    chance: 0.0909
-                -
-                    name: Elemental Mastery
-                    chance: 0.0909
-                -
-                    name: CRIT Rate%
-                    chance: 0.0682
-                -
-                    name: CRIT DMG%
-                    chance: 0.0682
-        -
-            name: Cryo DMG Bonus%
-            chance: 0.05
-            substats:
-                -
-                    name: HP
-                    chance: 0.1364
-                -
-                    name: ATK
-                    chance: 0.1364
-                -
-                    name: DEF
-                    chance: 0.1364
-                -
-                    name: HP%
-                    chance: 0.0909
-                -
-                    name: ATK%
-                    chance: 0.0909
-                -
-                    name: DEF
-                    chance: 0.0909
-                -
-                    name: Energy Recharge%
-                    chance: 0.0909
-                -
-                    name: Elemental Mastery
-                    chance: 0.0909
-                -
-                    name: CRIT Rate%
-                    chance: 0.0682
-                -
-                    name: CRIT DMG%
-                    chance: 0.0682
-        -
-            name: Hydro DMG Bonus%
-            chance: 0.05
-            substats:
-                -
-                    name: HP
-                    chance: 0.1364
-                -
-                    name: ATK
-                    chance: 0.1364
-                -
-                    name: DEF
-                    chance: 0.1364
-                -
-                    name: HP%
-                    chance: 0.0909
-                -
-                    name: ATK%
-                    chance: 0.0909
-                -
-                    name: DEF
-                    chance: 0.0909
-                -
-                    name: Energy Recharge%
-                    chance: 0.0909
-                -
-                    name: Elemental Mastery
-                    chance: 0.0909
-                -
-                    name: CRIT Rate%
-                    chance: 0.0682
-                -
-                    name: CRIT DMG%
-                    chance: 0.0682
-        -
-            name: Anemo DMG Bonus%
-            chance: 0.05
-            substats:
-                -
-                    name: HP
-                    chance: 0.1364
-                -
-                    name: ATK
-                    chance: 0.1364
-                -
-                    name: DEF
-                    chance: 0.1364
-                -
-                    name: HP%
-                    chance: 0.0909
-                -
-                    name: ATK%
-                    chance: 0.0909
-                -
-                    name: DEF
-                    chance: 0.0909
-                -
-                    name: Energy Recharge%
-                    chance: 0.0909
-                -
-                    name: Elemental Mastery
-                    chance: 0.0909
-                -
-                    name: CRIT Rate%
-                    chance: 0.0682
-                -
-                    name: CRIT DMG%
-                    chance: 0.0682
-        -
-            name: Geo DMG Bonus%
-            chance: 0.05
-            substats:
-                -
-                    name: HP
-                    chance: 0.1364
-                -
-                    name: ATK
-                    chance: 0.1364
-                -
-                    name: DEF
-                    chance: 0.1364
-                -
-                    name: HP%
-                    chance: 0.0909
-                -
-                    name: ATK%
-                    chance: 0.0909
-                -
-                    name: DEF
-                    chance: 0.0909
-                -
-                    name: Energy Recharge%
-                    chance: 0.0909
-                -
-                    name: Elemental Mastery
-                    chance: 0.0909
-                -
-                    name: CRIT Rate%
-                    chance: 0.0682
-                -
-                    name: CRIT DMG%
-                    chance: 0.0682
-        -
-            name: Physical DMG Bonus%
-            chance: 0.05
-            substats:
-                -
-                    name: HP
-                    chance: 0.1364
-                -
-                    name: ATK
-                    chance: 0.1364
-                -
-                    name: DEF
-                    chance: 0.1364
-                -
-                    name: HP%
-                    chance: 0.0909
-                -
-                    name: ATK%
-                    chance: 0.0909
-                -
-                    name: DEF
-                    chance: 0.0909
-                -
-                    name: Energy Recharge%
-                    chance: 0.0909
-                -
-                    name: Elemental Mastery
-                    chance: 0.0909
-                -
-                    name: CRIT Rate%
-                    chance: 0.0682
-                -
-                    name: CRIT DMG%
-                    chance: 0.0682
-        -
-            name: Elemental Mastery
-            chance: 0.025
-            substats:
-                -
-                    name: HP
-                    chance: 0.15
-                -
-                    name: ATK
-                    chance: 0.15
-                -
-                    name: DEF
-                    chance: 0.15
-                -
-                    name: HP%
-                    chance: 0.1
-                -
-                    name: ATK%
-                    chance: 0.1
-                -
-                    name: DEF%
-                    chance: 0.1
-                -
-                    name: Energy Recharge%
-                    chance: 0.1
-                -
-                    name: CRIT Rate%
-                    chance: 0.075
-                -
-                    name: CRIT DMG%
-                    chance: 0.075
--
-    name: circlet
-    chance: 0.2
-    stats:
-        -
-            name: HP%
-            chance: 0.22
-            substats:
-                -
-                    name: HP
-                    chance: 0.15
-                -
-                    name: ATK
-                    chance: 0.15
-                -
-                    name: DEF
-                    chance: 0.15
-                -
-                    name: ATK%
-                    chance: 0.1
-                -
-                    name: DEF%
-                    chance: 0.1
-                -
-                    name: Energy Recharge%
-                    chance: 0.1
-                -
-                    name: Elemental Mastery
-                    chance: 0.1
-                -
-                    name: CRIT Rate%
-                    chance: 0.075
-                -
-                    name: CRIT DMG%
-                    chance: 0.075
-        -
-            name: ATK%
-            chance: 0.22
-            substats:
-                -
-                    name: HP
-                    chance: 0.15
-                -
-                    name: ATK
-                    chance: 0.15
-                -
-                    name: DEF
-                    chance: 0.15
-                -
-                    name: HP%
-                    chance: 0.1
-                -
-                    name: DEF%
-                    chance: 0.1
-                -
-                    name: Energy Recharge%
-                    chance: 0.1
-                -
-                    name: Elemental Mastery
-                    chance: 0.1
-                -
-                    name: CRIT Rate%
-                    chance: 0.075
-                -
-                    name: CRIT DMG%
-                    chance: 0.075
-        -
-            name: DEF%
-            chance: 0.22
-            substats:
-                -
-                    name: HP
-                    chance: 0.15
-                -
-                    name: ATK
-                    chance: 0.15
-                -
-                    name: DEF
-                    chance: 0.15
-                -
-                    name: HP%
-                    chance: 0.1
-                -
-                    name: ATK%
-                    chance: 0.1
-                -
-                    name: Energy Recharge%
-                    chance: 0.1
-                -
-                    name: Elemental Mastery
-                    chance: 0.1
-                -
-                    name: CRIT Rate%
-                    chance: 0.075
-                -
-                    name: CRIT DMG%
-                    chance: 0.075
-        -
-            name: CRIT Rate%
-            chance: 0.1
-            substats:
-                -
-                    name: HP
-                    chance: 0.1463
-                -
-                    name: ATK
-                    chance: 0.1463
-                -
-                    name: DEF
-                    chance: 0.1463
-                -
-                    name: HP%
-                    chance: 0.0976
-                -
-                    name: ATK%
-                    chance: 0.0976
-                -
-                    name: DEF%
-                    chance: 0.0976
-                -
-                    name: Energy Recharge%
-                    chance: 0.0976
-                -
-                    name: Elemental Mastery
-                    chance: 0.0976
-                -
-                    name: CRIT DMG%
-                    chance: 0.0732
-        -
-            name: CRIT DMG%
-            chance: 0.1
-            substats:
-                -
-                    name: HP
-                    chance: 0.1463
-                -
-                    name: ATK
-                    chance: 0.1463
-                -
-                    name: DEF
-                    chance: 0.1463
-                -
-                    name: HP%
-                    chance: 0.0976
-                -
-                    name: ATK%
-                    chance: 0.0976
-                -
-                    name: DEF%
-                    chance: 0.0976
-                -
-                    name: Energy Recharge%
-                    chance: 0.0976
-                -
-                    name: Elemental Mastery
-                    chance: 0.0976
-                -
-                    name: CRIT Rate%
-                    chance: 0.0732
-        -
-            name: Healing Bonus%
-            chance: 0.1
-            substats:
-                -
-                    name: HP
-                    chance: 0.1364
-                -
-                    name: ATK
-                    chance: 0.1364
-                -
-                    name: DEF
-                    chance: 0.1364
-                -
-                    name: HP%
-                    chance: 0.0909
-                -
-                    name: ATK%
-                    chance: 0.0909
-                -
-                    name: DEF%
-                    chance: 0.0909
-                -
-                    name: Energy Recharge%
-                    chance: 0.0909
-                -
-                    name: Elemental Mastery
-                    chance: 0.0909
-                -
-                    name: CRIT Rate%
-                    chance: 0.0682
-                -
-                    name: CRIT DMG%
-                    chance: 0.0682
-        -
-            name: Elemental Mastery
-            chance: 0.04
-            substats:
-                -
-                    name: HP
-                    chance: 0.15
-                -
-                    name: ATK
-                    chance: 0.15
-                -
-                    name: DEF
-                    chance: 0.15
-                -
-                    name: HP%
-                    chance: 0.1
-                -
-                    name: ATK%
-                    chance: 0.1
-                -
-                    name: DEF%
-                    chance: 0.1
-                -
-                    name: Energy Recharge%
-                    chance: 0.1
-                -
-                    name: CRIT Rate%
-                    chance: 0.075
-                -
-                    name: CRIT DMG%
-                    chance: 0.075
+- name: flower
+  chance: 0.2
+  stats:
+    - name: HP
+      chance: 1
+      substats:
+        - name: ATK
+          chance: 0.1579
+        - name: DEF
+          chance: 0.1579
+        - name: HP%
+          chance: 0.1053
+        - name: ATK%
+          chance: 0.1053
+        - name: DEF%
+          chance: 0.1053
+        - name: Energy Recharge%
+          chance: 0.1053
+        - name: Elemental Mastery
+          chance: 0.1053
+        - name: CRIT Rate%
+          chance: 0.0789
+        - name: CRIT DMG%
+          chance: 0.0789
+- name: feather
+  chance: 0.2
+  stats:
+    - name: ATK
+      chance: 1
+      substats:
+        - name: HP
+          chance: 0.1579
+        - name: DEF
+          chance: 0.1579
+        - name: HP%
+          chance: 0.1053
+        - name: ATK%
+          chance: 0.1053
+        - name: DEF%
+          chance: 0.1053
+        - name: Energy Recharge%
+          chance: 0.1053
+        - name: Elemental Mastery
+          chance: 0.1053
+        - name: CRIT Rate%
+          chance: 0.0789
+        - name: CRIT DMG%
+          chance: 0.0789
+- name: sands
+  chance: 0.2
+  stats:
+    - name: HP%
+      chance: 0.2668
+      substats:
+        - name: HP
+          chance: 0.15
+        - name: ATK
+          chance: 0.15
+        - name: DEF
+          chance: 0.15
+        - name: ATK%
+          chance: 0.1
+        - name: DEF%
+          chance: 0.1
+        - name: Energy Recharge%
+          chance: 0.1
+        - name: Elemental Mastery
+          chance: 0.1
+        - name: CRIT Rate%
+          chance: 0.075
+        - name: CRIT DMG%
+          chance: 0.075
+    - name: ATK%
+      chance: 0.2666
+      substats:
+        - name: HP
+          chance: 0.15
+        - name: ATK
+          chance: 0.15
+        - name: DEF
+          chance: 0.15
+        - name: HP%
+          chance: 0.1
+        - name: DEF%
+          chance: 0.1
+        - name: Energy Recharge%
+          chance: 0.1
+        - name: Elemental Mastery
+          chance: 0.1
+        - name: CRIT Rate%
+          chance: 0.075
+        - name: CRIT DMG%
+          chance: 0.075
+    - name: DEF%
+      chance: 0.2666
+      substats:
+        - name: HP
+          chance: 0.15
+        - name: ATK
+          chance: 0.15
+        - name: DEF
+          chance: 0.15
+        - name: HP%
+          chance: 0.1
+        - name: ATK%
+          chance: 0.1
+        - name: Energy Recharge%
+          chance: 0.1
+        - name: Elemental Mastery
+          chance: 0.1
+        - name: CRIT Rate%
+          chance: 0.075
+        - name: CRIT DMG%
+          chance: 0.075
+    - name: Energy Recharge%
+      chance: 0.1
+      substats:
+        - name: HP
+          chance: 0.15
+        - name: ATK
+          chance: 0.15
+        - name: DEF
+          chance: 0.15
+        - name: HP%
+          chance: 0.1
+        - name: ATK%
+          chance: 0.1
+        - name: DEF%
+          chance: 0.1
+        - name: Elemental Mastery
+          chance: 0.1
+        - name: CRIT Rate%
+          chance: 0.075
+        - name: CRIT DMG%
+          chance: 0.075
+    - name: Elemental Mastery
+      chance: 0.1
+      substats:
+        - name: HP
+          chance: 0.15
+        - name: ATK
+          chance: 0.15
+        - name: DEF
+          chance: 0.15
+        - name: HP%
+          chance: 0.1
+        - name: ATK%
+          chance: 0.1
+        - name: DEF%
+          chance: 0.1
+        - name: Energy Recharge%
+          chance: 0.1
+        - name: CRIT Rate%
+          chance: 0.075
+        - name: CRIT DMG%
+          chance: 0.075
+- name: goblet
+  chance: 0.2
+  stats:
+    - name: HP%
+      chance: 0.2125
+      substats:
+        - name: HP
+          chance: 0.15
+        - name: ATK
+          chance: 0.15
+        - name: DEF
+          chance: 0.15
+        - name: ATK%
+          chance: 0.1
+        - name: DEF%
+          chance: 0.1
+        - name: Energy Recharge%
+          chance: 0.1
+        - name: Elemental Mastery
+          chance: 0.1
+        - name: CRIT Rate%
+          chance: 0.075
+        - name: CRIT DMG%
+          chance: 0.075
+    - name: ATK%
+      chance: 0.2125
+      substats:
+        - name: HP
+          chance: 0.15
+        - name: ATK
+          chance: 0.15
+        - name: DEF
+          chance: 0.15
+        - name: HP%
+          chance: 0.1
+        - name: DEF%
+          chance: 0.1
+        - name: Energy Recharge%
+          chance: 0.1
+        - name: Elemental Mastery
+          chance: 0.1
+        - name: CRIT Rate%
+          chance: 0.075
+        - name: CRIT DMG%
+          chance: 0.075
+    - name: DEF%
+      chance: 0.2
+      substats:
+        - name: HP
+          chance: 0.15
+        - name: ATK
+          chance: 0.15
+        - name: DEF
+          chance: 0.15
+        - name: HP%
+          chance: 0.1
+        - name: ATK%
+          chance: 0.1
+        - name: Energy Recharge%
+          chance: 0.1
+        - name: Elemental Mastery
+          chance: 0.1
+        - name: CRIT Rate%
+          chance: 0.075
+        - name: CRIT DMG%
+          chance: 0.075
+    - name: Pyro DMG Bonus%
+      chance: 0.05
+      substats:
+        - name: HP
+          chance: 0.1364
+        - name: ATK
+          chance: 0.1364
+        - name: DEF
+          chance: 0.1364
+        - name: HP%
+          chance: 0.0909
+        - name: ATK%
+          chance: 0.0909
+        - name: DEF
+          chance: 0.0909
+        - name: Energy Recharge%
+          chance: 0.0909
+        - name: Elemental Mastery
+          chance: 0.0909
+        - name: CRIT Rate%
+          chance: 0.0682
+        - name: CRIT DMG%
+          chance: 0.0682
+    - name: Electro DMG Bonus%
+      chance: 0.05
+      substats:
+        - name: HP
+          chance: 0.1364
+        - name: ATK
+          chance: 0.1364
+        - name: DEF
+          chance: 0.1364
+        - name: HP%
+          chance: 0.0909
+        - name: ATK%
+          chance: 0.0909
+        - name: DEF
+          chance: 0.0909
+        - name: Energy Recharge%
+          chance: 0.0909
+        - name: Elemental Mastery
+          chance: 0.0909
+        - name: CRIT Rate%
+          chance: 0.0682
+        - name: CRIT DMG%
+          chance: 0.0682
+    - name: Cryo DMG Bonus%
+      chance: 0.05
+      substats:
+        - name: HP
+          chance: 0.1364
+        - name: ATK
+          chance: 0.1364
+        - name: DEF
+          chance: 0.1364
+        - name: HP%
+          chance: 0.0909
+        - name: ATK%
+          chance: 0.0909
+        - name: DEF
+          chance: 0.0909
+        - name: Energy Recharge%
+          chance: 0.0909
+        - name: Elemental Mastery
+          chance: 0.0909
+        - name: CRIT Rate%
+          chance: 0.0682
+        - name: CRIT DMG%
+          chance: 0.0682
+    - name: Hydro DMG Bonus%
+      chance: 0.05
+      substats:
+        - name: HP
+          chance: 0.1364
+        - name: ATK
+          chance: 0.1364
+        - name: DEF
+          chance: 0.1364
+        - name: HP%
+          chance: 0.0909
+        - name: ATK%
+          chance: 0.0909
+        - name: DEF
+          chance: 0.0909
+        - name: Energy Recharge%
+          chance: 0.0909
+        - name: Elemental Mastery
+          chance: 0.0909
+        - name: CRIT Rate%
+          chance: 0.0682
+        - name: CRIT DMG%
+          chance: 0.0682
+    - name: Anemo DMG Bonus%
+      chance: 0.05
+      substats:
+        - name: HP
+          chance: 0.1364
+        - name: ATK
+          chance: 0.1364
+        - name: DEF
+          chance: 0.1364
+        - name: HP%
+          chance: 0.0909
+        - name: ATK%
+          chance: 0.0909
+        - name: DEF
+          chance: 0.0909
+        - name: Energy Recharge%
+          chance: 0.0909
+        - name: Elemental Mastery
+          chance: 0.0909
+        - name: CRIT Rate%
+          chance: 0.0682
+        - name: CRIT DMG%
+          chance: 0.0682
+    - name: Geo DMG Bonus%
+      chance: 0.05
+      substats:
+        - name: HP
+          chance: 0.1364
+        - name: ATK
+          chance: 0.1364
+        - name: DEF
+          chance: 0.1364
+        - name: HP%
+          chance: 0.0909
+        - name: ATK%
+          chance: 0.0909
+        - name: DEF
+          chance: 0.0909
+        - name: Energy Recharge%
+          chance: 0.0909
+        - name: Elemental Mastery
+          chance: 0.0909
+        - name: CRIT Rate%
+          chance: 0.0682
+        - name: CRIT DMG%
+          chance: 0.0682
+    - name: Physical DMG Bonus%
+      chance: 0.05
+      substats:
+        - name: HP
+          chance: 0.1364
+        - name: ATK
+          chance: 0.1364
+        - name: DEF
+          chance: 0.1364
+        - name: HP%
+          chance: 0.0909
+        - name: ATK%
+          chance: 0.0909
+        - name: DEF
+          chance: 0.0909
+        - name: Energy Recharge%
+          chance: 0.0909
+        - name: Elemental Mastery
+          chance: 0.0909
+        - name: CRIT Rate%
+          chance: 0.0682
+        - name: CRIT DMG%
+          chance: 0.0682
+    - name: Elemental Mastery
+      chance: 0.025
+      substats:
+        - name: HP
+          chance: 0.15
+        - name: ATK
+          chance: 0.15
+        - name: DEF
+          chance: 0.15
+        - name: HP%
+          chance: 0.1
+        - name: ATK%
+          chance: 0.1
+        - name: DEF%
+          chance: 0.1
+        - name: Energy Recharge%
+          chance: 0.1
+        - name: CRIT Rate%
+          chance: 0.075
+        - name: CRIT DMG%
+          chance: 0.075
+- name: circlet
+  chance: 0.2
+  stats:
+    - name: HP%
+      chance: 0.22
+      substats:
+        - name: HP
+          chance: 0.15
+        - name: ATK
+          chance: 0.15
+        - name: DEF
+          chance: 0.15
+        - name: ATK%
+          chance: 0.1
+        - name: DEF%
+          chance: 0.1
+        - name: Energy Recharge%
+          chance: 0.1
+        - name: Elemental Mastery
+          chance: 0.1
+        - name: CRIT Rate%
+          chance: 0.075
+        - name: CRIT DMG%
+          chance: 0.075
+    - name: ATK%
+      chance: 0.22
+      substats:
+        - name: HP
+          chance: 0.15
+        - name: ATK
+          chance: 0.15
+        - name: DEF
+          chance: 0.15
+        - name: HP%
+          chance: 0.1
+        - name: DEF%
+          chance: 0.1
+        - name: Energy Recharge%
+          chance: 0.1
+        - name: Elemental Mastery
+          chance: 0.1
+        - name: CRIT Rate%
+          chance: 0.075
+        - name: CRIT DMG%
+          chance: 0.075
+    - name: DEF%
+      chance: 0.22
+      substats:
+        - name: HP
+          chance: 0.15
+        - name: ATK
+          chance: 0.15
+        - name: DEF
+          chance: 0.15
+        - name: HP%
+          chance: 0.1
+        - name: ATK%
+          chance: 0.1
+        - name: Energy Recharge%
+          chance: 0.1
+        - name: Elemental Mastery
+          chance: 0.1
+        - name: CRIT Rate%
+          chance: 0.075
+        - name: CRIT DMG%
+          chance: 0.075
+    - name: CRIT Rate%
+      chance: 0.1
+      substats:
+        - name: HP
+          chance: 0.1463
+        - name: ATK
+          chance: 0.1463
+        - name: DEF
+          chance: 0.1463
+        - name: HP%
+          chance: 0.0976
+        - name: ATK%
+          chance: 0.0976
+        - name: DEF%
+          chance: 0.0976
+        - name: Energy Recharge%
+          chance: 0.0976
+        - name: Elemental Mastery
+          chance: 0.0976
+        - name: CRIT DMG%
+          chance: 0.0732
+    - name: CRIT DMG%
+      chance: 0.1
+      substats:
+        - name: HP
+          chance: 0.1463
+        - name: ATK
+          chance: 0.1463
+        - name: DEF
+          chance: 0.1463
+        - name: HP%
+          chance: 0.0976
+        - name: ATK%
+          chance: 0.0976
+        - name: DEF%
+          chance: 0.0976
+        - name: Energy Recharge%
+          chance: 0.0976
+        - name: Elemental Mastery
+          chance: 0.0976
+        - name: CRIT Rate%
+          chance: 0.0732
+    - name: Healing Bonus%
+      chance: 0.1
+      substats:
+        - name: HP
+          chance: 0.1364
+        - name: ATK
+          chance: 0.1364
+        - name: DEF
+          chance: 0.1364
+        - name: HP%
+          chance: 0.0909
+        - name: ATK%
+          chance: 0.0909
+        - name: DEF%
+          chance: 0.0909
+        - name: Energy Recharge%
+          chance: 0.0909
+        - name: Elemental Mastery
+          chance: 0.0909
+        - name: CRIT Rate%
+          chance: 0.0682
+        - name: CRIT DMG%
+          chance: 0.0682
+    - name: Elemental Mastery
+      chance: 0.04
+      substats:
+        - name: HP
+          chance: 0.15
+        - name: ATK
+          chance: 0.15
+        - name: DEF
+          chance: 0.15
+        - name: HP%
+          chance: 0.1
+        - name: ATK%
+          chance: 0.1
+        - name: DEF%
+          chance: 0.1
+        - name: Energy Recharge%
+          chance: 0.1
+        - name: CRIT Rate%
+          chance: 0.075
+        - name: CRIT DMG%
+          chance: 0.075

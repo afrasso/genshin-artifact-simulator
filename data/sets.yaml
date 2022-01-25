@@ -1,78 +1,58 @@
--
-    name: Archaic Petra
-    source: domain
-    domain: Domain of Guyun
--
-    name: Blizzard Strayer
-    source: domain
-    domain: Peak of Vindagnyr
--
-    name: Bloodstained Chivalry
-    source: domain
-    domain: Clear Pool and Mountain Cavern
--
-    name: Crimson Witch of Flames
-    source: domain
-    domain: Hidden Palace of Zhou Formula
--
-    name: Emblem of Severed Fate
-    source: domain
-    domain: Momiji-Dyed Court
--
-    name: Gladiator's Finale
-    source: boss
--
-    name: Heart of Depth
-    source: domain
-    domain: Peak of Vindagnyr
--
-    name: Husk of Opulent Dreams
-    source: domain
-    domain: Slumbering Court
--
-    name: Lavawalker
-    source: domain
-    domain: Hidden Palace of Zhou Formula
--
-    name: Maiden Beloved
-    source: domain
-    domain: Valley of Remembrance
--
-    name: Noblesse Oblige
-    source: domain
-    domain: Clear Pool and Mountain Cavern
--
-    name: Ocean-Hued Clam
-    source: domain
-    domain: Slumbering Court
--
-    name: Pale Flame
-    source: domain
-    domain: Ridge Watch
--
-    name: Retracing Bolide
-    source: domain
-    domain: Domain of Guyun
--
-    name: Shimenawa's Resistance
-    source: domain
-    domain: Momiji-Dyed Court
--
-    name: Tenacity of the Millelith
-    source: domain
-    domain: Ridge Watch
--
-    name: Thundering Fury
-    source: domain
-    domain: Midsummer Courtyard
--
-    name: Thundersoother
-    source: domain
-    domain: Midsummer Courtyard
--
-    name: Viridescent Veneer
-    source: domain
-    domain: Valley of Remembrance
--
-    name: Wanderer's Troupe
-    source: boss
+- name: Archaic Petra
+  source: domain
+  domain: Domain of Guyun
+- name: Blizzard Strayer
+  source: domain
+  domain: Peak of Vindagnyr
+- name: Bloodstained Chivalry
+  source: domain
+  domain: Clear Pool and Mountain Cavern
+- name: Crimson Witch of Flames
+  source: domain
+  domain: Hidden Palace of Zhou Formula
+- name: Emblem of Severed Fate
+  source: domain
+  domain: Momiji-Dyed Court
+- name: Gladiator's Finale
+  source: boss
+- name: Heart of Depth
+  source: domain
+  domain: Peak of Vindagnyr
+- name: Husk of Opulent Dreams
+  source: domain
+  domain: Slumbering Court
+- name: Lavawalker
+  source: domain
+  domain: Hidden Palace of Zhou Formula
+- name: Maiden Beloved
+  source: domain
+  domain: Valley of Remembrance
+- name: Noblesse Oblige
+  source: domain
+  domain: Clear Pool and Mountain Cavern
+- name: Ocean-Hued Clam
+  source: domain
+  domain: Slumbering Court
+- name: Pale Flame
+  source: domain
+  domain: Ridge Watch
+- name: Retracing Bolide
+  source: domain
+  domain: Domain of Guyun
+- name: Shimenawa's Resistance
+  source: domain
+  domain: Momiji-Dyed Court
+- name: Tenacity of the Millelith
+  source: domain
+  domain: Ridge Watch
+- name: Thundering Fury
+  source: domain
+  domain: Midsummer Courtyard
+- name: Thundersoother
+  source: domain
+  domain: Midsummer Courtyard
+- name: Viridescent Veneer
+  source: domain
+  domain: Valley of Remembrance
+- name: Wanderer's Troupe
+  source: boss
