@@ -99,7 +99,7 @@ const findRemainingArtifacts = ({
   }
   if (noSetCount < 1) {
     let artifact;
-    if (!includeNoSet) {
+    if (includeNoSet) {
       artifact = _.find(artifacts, (artifact) =>
         artifactMatchesCriteria({
           artifact,

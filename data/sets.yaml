@@ -1,58 +1,58 @@
-- name: Archaic Petra
+- name: ArchaicPetra
   source: domain
   domain: Domain of Guyun
-- name: Blizzard Strayer
+- name: BlizzardStrayer
   source: domain
   domain: Peak of Vindagnyr
-- name: Bloodstained Chivalry
+- name: BloodstainedChivalry
   source: domain
   domain: Clear Pool and Mountain Cavern
-- name: Crimson Witch of Flames
+- name: CrimsonWitchofFlames
   source: domain
   domain: Hidden Palace of Zhou Formula
-- name: Emblem of Severed Fate
+- name: EmblemOfSeveredFate
   source: domain
   domain: Momiji-Dyed Court
-- name: Gladiator's Finale
+- name: GladiatorsFinale
   source: boss
-- name: Heart of Depth
+- name: HeartOfDepth
   source: domain
   domain: Peak of Vindagnyr
-- name: Husk of Opulent Dreams
+- name: HuskOfOpulentDreams
   source: domain
   domain: Slumbering Court
 - name: Lavawalker
   source: domain
   domain: Hidden Palace of Zhou Formula
-- name: Maiden Beloved
+- name: MaidenBeloved
   source: domain
   domain: Valley of Remembrance
-- name: Noblesse Oblige
+- name: NoblesseOblige
   source: domain
   domain: Clear Pool and Mountain Cavern
-- name: Ocean-Hued Clam
+- name: OceanHuedClam
   source: domain
   domain: Slumbering Court
-- name: Pale Flame
+- name: PaleFlame
   source: domain
   domain: Ridge Watch
-- name: Retracing Bolide
+- name: RetracingBolide
   source: domain
   domain: Domain of Guyun
-- name: Shimenawa's Resistance
+- name: ShimenawasResistance
   source: domain
   domain: Momiji-Dyed Court
-- name: Tenacity of the Millelith
+- name: TenacityOfTheMillelith
   source: domain
   domain: Ridge Watch
-- name: Thundering Fury
+- name: ThunderingFury
   source: domain
   domain: Midsummer Courtyard
 - name: Thundersoother
   source: domain
   domain: Midsummer Courtyard
-- name: Viridescent Veneer
+- name: ViridescentVenerer
   source: domain
   domain: Valley of Remembrance
-- name: Wanderer's Troupe
+- name: WanderersTroupe
   source: boss

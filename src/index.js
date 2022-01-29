@@ -72,7 +72,13 @@ const simulate = ({ builds, artifacts }) => {
 };
 
 module.exports = {
-  simulate: ({ builds, artifacts, runs }) => {
+  simulate: ({ builds, good, runs }) => {
+    const artifacts = _.map(_.cloneDeep(good.artifacts), (artifact) => {
+      artifact.set = artifact.setKey;
+      artifact.type = artifact.slotKey;
+      artifact.stat = artifact.mainStatKey;
+      return artifact;
+    });
     return _.times(runs, () =>
       simulate({
         builds: _.cloneDeep(builds),

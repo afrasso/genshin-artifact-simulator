@@ -1,0 +1,47 @@
+format: GOOD
+artifacts:
+  - setKey: Husk of Opulent Dreams
+    slotKey: plume
+    mainStatKey: hp
+  - setKey: Husk of Opulent Dreams
+    slotKey: feather
+    mainStatKey: atk
+  - setKey: Husk of Opulent Dreams
+    slotKey: goblet
+    mainStatKey: def_
+  - setKey: Noblesse Oblige
+    slotKey: plume
+    mainStatKey: hp
+  - setKey: Noblesse Oblige
+    slotKey: feather
+    mainStatKey: atk
+  - setKey: Noblesse Oblige
+    slotKey: circlet
+    mainStatKey: heal_
+  - setKey: Emblem of Severed Fate
+    slotKey: plume
+    mainStatKey: hp
+  - setKey: Emblem of Severed Fate
+    slotKey: feather
+    mainStatKey: atk
+  - setKey: Viridescent Veneer
+    slotKey: plume
+    mainStatKey: hp
+  - setKey: Viridescent Veneer
+    slotKey: feather
+    mainStatKey: atk
+  - setKey: Viridescent Veneer
+    slotKey: goblet
+    mainStatKey: atk_
+  - setKey: Viridescent Veneer
+    slotKey: circlet
+    mainStatKey: atk_
+  - setKey: Viridescent Veneer
+    slotKey: plume
+    mainStatKey: hp
+  - setKey: Viridescent Veneer
+    slotKey: feather
+    mainStatKey: atk
+  - setKey: Viridescent Veneer
+    slotKey: sands
+    mainStatKey: enerRech_

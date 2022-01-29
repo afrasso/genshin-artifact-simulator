@@ -1,79 +1,79 @@
 - name: Albedo
-  set1: Husk of Opulent Dreams
+  set1: HuskOfOpulentDreams
   artifactCriteria:
     - type: flower
-    - type: feather
+    - type: plume
     - type: sands
-      stat: DEF%
+      stat: def_
     - type: goblet
-      stat: DEF%
+      stat: def_
     - type: circlet
-      stat: DEF%
+      stat: def_
 - name: Bennett
-  set1: Noblesse Oblige
+  set1: NoblesseOblige
   artifactCriteria:
     - type: flower
-    - type: feather
+    - type: plume
     - type: sands
-      stat: Energy Recharge%
+      stat: enerRech_
     - type: goblet
-      stat: HP%
+      stat: hp_
     - type: circlet
-      stat: Healing Bonus%
+      stat: heal_
 - name: Xiangling
-  set1: Emblem of Severed Fate
+  set1: EmblemOfSeveredFate
   artifactCriteria:
     - type: flower
-    - type: feather
+    - type: plume
     - type: sands
-      stat: Energy Recharge%
+      stat: enerRech_
     - type: goblet
-      stat: Pyro DMG Bonus%
+      stat: pyro_dmg_
     - type: circlet
-      stat: CRIT DMG%
+      stat: critDMG_
 - name: Jean
-  set1: Viridescent Veneer
+  set1: ViridescentVenerer
   artifactCriteria:
     - type: flower
-    - type: feather
+    - type: plume
     - type: sands
-      stat: ATK%
+      stat: atk_
     - type: goblet
-      stat: ATK%
+      stat: atk_
     - type: circlet
-      stat: ATK%
+      stat: atk_
 - name: Sucrose
-  set1: Viridescent Veneer
+  set1: ViridescentVenerer
   artifactCriteria:
     - type: flower
-    - type: feather
+    - type: plume
     - type: sands
-      stat: Energy Recharge%
+      stat: enerRech_
     - type: goblet
-      stat: Anemo DMG Bonus%
+      stat: anemo_dmg_
     - type: circlet
-      stat: Elemental Mastery
+      stat: eleMas
 - name: Yanfei
-  set1: Emblem of Severed Fate
-  set2: Tenacity of the Millelith
+  set1: EmblemOfSeveredFate
+  set2: TenacityOfTheMillelith
   artifactCriteria:
     - type: flower
-    - type: feather
+    - type: plume
     - type: sands
-      stat: HP%
+      stat: hp_
     - type: goblet
-      stat: HP%
+      stat: hp_
     - type: circlet
-      stat: HP%
+      stat: hp_
 - name: Chongyun
-  set1: Blizzard Strayer
-  set2: Noblesse Oblige
+  set1: BlizzardStrayer
+  set2: NoblesseOblige
   artifactCriteria:
     - type: flower
-    - type: feather
+    - type: plume
     - type: sands
-      stat: Energy Recharge%
+      stat: enerRech_
     - type: goblet
-      stat: Cryo DMG Bonus%
+      stat: cryo_dmg_
     - type: circlet
-      stat: CRIT Rate%
+      stat: critRate_
