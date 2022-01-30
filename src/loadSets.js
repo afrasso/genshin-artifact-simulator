@@ -1,7 +1,4 @@
-const fs = require("fs");
-const yaml = require("js-yaml");
-
-const sets = yaml.load(fs.readFileSync("./data/sets.yaml"));
+const sets = require("../compiledData/sets.json");
 
 const domains = {};
 const bossArtifactSets = [];

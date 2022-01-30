@@ -5,13 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Example",
             "type": "pwa-node",
             "request": "launch",
-            "name": "Launch Example",
+            "program": "${workspaceFolder}/example/index.js",
             "skipFiles": [
                 "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\example\\index.js"
-        }
+            ]
+        },
+        {
+            "name": "Compile Data",
+            "type": "pwa-node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/compileData.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
     ]
 }

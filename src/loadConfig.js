@@ -1,7 +1,4 @@
-const fs = require("fs");
-const yaml = require("js-yaml");
-
-const config = yaml.load(fs.readFileSync("./data/config.yaml"));
+const config = require("../compiledData/config.json");
 
 config.dropRates.domain.forEach((artifactDropRate) => {
   let rngMin = 0;

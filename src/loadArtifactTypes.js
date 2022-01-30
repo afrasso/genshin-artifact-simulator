@@ -1,7 +1,4 @@
-const fs = require("fs");
-const yaml = require("js-yaml");
-
-const artifactTypes = yaml.load(fs.readFileSync("./data/artifactTypes.yaml"));
+const artifactTypes = require("../compiledData/artifactTypes.json");
 
 let typeRngMin = 0;
 artifactTypes.forEach((type) => {
