@@ -13,10 +13,10 @@
     "type": "git",
     "url": "https://github.com/afrasso/genshin-artifact-simulator.git"
   },
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "src/index.js",
   "scripts": {
-    "build": "node ./src/compileData.js && tsc",
+    "build": "node ./compileYaml.js && tsc",
     "lint": "eslint ./src",
     "pretest": "prettier --write ./src && eslint ./src && npm run build",
     "test": "echo \"No tests\""
