@@ -1,0 +1,78 @@
+- key: ArchaicPetra
+  name: Archaic Petra
+  source: domain
+  domainKey: Domain_of_Guyun
+- key: BlizzardStrayer
+  name: Blizzard Strayer
+  source: domain
+  domainKey: Peak_of_Vindagnyr
+- key: BloodstainedChivalry
+  name: Bloodstained Chivalry
+  source: domain
+  domainKey: Clear_Pool_and_Mountain_Cavern
+- key: CrimsonWitchOfFlames
+  name: Crimson Witch of Flames
+  source: domain
+  domainKey: Hidden_Palace_of_Zhou_Formula
+- key: EmblemOfSeveredFate
+  name: Emblem of Severed Fate
+  source: domain
+  domainKey: Momiji_Dyed_Court
+- key: GladiatorsFinale
+  name: Gladiator's Finale
+  source: boss
+- key: HeartOfDepth
+  name: Heart of Depth
+  source: domain
+  domainKey: Peak_of_Vindagnyr
+- key: HuskOfOpulentDreams
+  name: Husk of Opulent Dreams
+  source: domain
+  domainKey: Slumbering_Court
+- key: Lavawalker
+  name: Lavawalker
+  source: domain
+  domainKey: Hidden_Palace_of_Zhou_Formula
+- key: MaidenBeloved
+  name: Maiden Beloved
+  source: domain
+  domainKey: Valley_of_Remembrance
+- key: NoblesseOblige
+  name: Noblesse Oblige
+  source: domain
+  domainKey: Clear_Pool_and_Mountain_Cavern
+- key: OceanHuedClam
+  name: Ocean-Hued Clam
+  source: domain
+  domainKey: Slumbering_Court
+- key: PaleFlame
+  name: Pale Flame
+  source: domain
+  domainKey: Ridge_Watch
+- key: RetracingBolide
+  name: Retracing Bolide
+  source: domain
+  domainKey: Domain_of_Guyun
+- key: ShimenawasReminiscence
+  name: Shimenawa's Reminiscence
+  source: domain
+  domainKey: Momiji_Dyed_Court
+- key: TenacityOfTheMillelith
+  name: Tenacity of the Millelith
+  source: domain
+  domainKey: Ridge_Watch
+- key: ThunderingFury
+  name: ThunderingFury
+  source: domain
+  domainKey: Midsummer_Courtyard
+- key: Thundersoother
+  name: Thundersoother
+  source: domain
+  domainKey: Midsummer_Courtyard
+- key: ViridescentVenerer
+  name: Viridescent Venerer
+  source: domain
+  domainKey: Valley_of_Remembrance
+- key: WanderersTroupe
+  name: Wanderer's Troupe
+  source: boss

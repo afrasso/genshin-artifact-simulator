@@ -5,9 +5,7 @@
     "target": "es5",
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "sourceMap": true,
-    "module": "es6",
-    "moduleResolution": "node"
+    "sourceMap": true
   },
   "include": ["./src/**/*", "./example/**/*"]
 }

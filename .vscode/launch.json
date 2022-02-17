@@ -4,12 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "name": "Launch Example",
             "type": "pwa-node",
             "request": "launch",
-            "program": "${workspaceFolder}/example/index.js",
             "preLaunchTask": "tsc: build - tsconfig.json",
+            "program": "${workspaceFolder}/example/index.ts",
             "outFiles": [
                 "${workspaceFolder}/out/**/*.js"
             ],
@@ -21,7 +22,7 @@
             "name": "Compile Data",
             "type": "pwa-node",
             "request": "launch",
-            "program": "${workspaceFolder}/src/compileData.js",
+            "program": "${workspaceFolder}/compileYaml.js",
             "skipFiles": [
                 "<node_internals>/**"
             ]

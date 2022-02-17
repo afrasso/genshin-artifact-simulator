@@ -1,0 +1,556 @@
+- slotKey: flower
+  chance: 0.2
+  dropRatesByStat:
+    - statKey: hp
+      chance: 1
+      dropRatesBySubstat:
+        - statKey: atk
+          chance: 0.1579
+        - statKey: def
+          chance: 0.1579
+        - statKey: hp_
+          chance: 0.1053
+        - statKey: atk_
+          chance: 0.1053
+        - statKey: def_
+          chance: 0.1053
+        - statKey: enerRech_
+          chance: 0.1053
+        - statKey: eleMas
+          chance: 0.1053
+        - statKey: critRate_
+          chance: 0.0789
+        - statKey: critDMG_
+          chance: 0.0789
+- slotKey: plume
+  chance: 0.2
+  dropRatesByStat:
+    - statKey: atk
+      chance: 1
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.1579
+        - statKey: def
+          chance: 0.1579
+        - statKey: hp_
+          chance: 0.1053
+        - statKey: atk_
+          chance: 0.1053
+        - statKey: def_
+          chance: 0.1053
+        - statKey: enerRech_
+          chance: 0.1053
+        - statKey: eleMas
+          chance: 0.1053
+        - statKey: critRate_
+          chance: 0.0789
+        - statKey: critDMG_
+          chance: 0.0789
+- slotKey: sands
+  chance: 0.2
+  dropRatesByStat:
+    - statKey: hp_
+      chance: 0.2668
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.15
+        - statKey: atk
+          chance: 0.15
+        - statKey: def
+          chance: 0.15
+        - statKey: atk_
+          chance: 0.1
+        - statKey: def_
+          chance: 0.1
+        - statKey: enerRech_
+          chance: 0.1
+        - statKey: eleMas
+          chance: 0.1
+        - statKey: critRate_
+          chance: 0.075
+        - statKey: critDMG_
+          chance: 0.075
+    - statKey: atk_
+      chance: 0.2666
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.15
+        - statKey: atk
+          chance: 0.15
+        - statKey: def
+          chance: 0.15
+        - statKey: hp_
+          chance: 0.1
+        - statKey: def_
+          chance: 0.1
+        - statKey: enerRech_
+          chance: 0.1
+        - statKey: eleMas
+          chance: 0.1
+        - statKey: critRate_
+          chance: 0.075
+        - statKey: critDMG_
+          chance: 0.075
+    - statKey: def_
+      chance: 0.2666
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.15
+        - statKey: atk
+          chance: 0.15
+        - statKey: def
+          chance: 0.15
+        - statKey: hp_
+          chance: 0.1
+        - statKey: atk_
+          chance: 0.1
+        - statKey: enerRech_
+          chance: 0.1
+        - statKey: eleMas
+          chance: 0.1
+        - statKey: critRate_
+          chance: 0.075
+        - statKey: critDMG_
+          chance: 0.075
+    - statKey: enerRech_
+      chance: 0.1
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.15
+        - statKey: atk
+          chance: 0.15
+        - statKey: def
+          chance: 0.15
+        - statKey: hp_
+          chance: 0.1
+        - statKey: atk_
+          chance: 0.1
+        - statKey: def_
+          chance: 0.1
+        - statKey: eleMas
+          chance: 0.1
+        - statKey: critRate_
+          chance: 0.075
+        - statKey: critDMG_
+          chance: 0.075
+    - statKey: eleMas
+      chance: 0.1
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.15
+        - statKey: atk
+          chance: 0.15
+        - statKey: def
+          chance: 0.15
+        - statKey: hp_
+          chance: 0.1
+        - statKey: atk_
+          chance: 0.1
+        - statKey: def_
+          chance: 0.1
+        - statKey: enerRech_
+          chance: 0.1
+        - statKey: critRate_
+          chance: 0.075
+        - statKey: critDMG_
+          chance: 0.075
+- slotKey: goblet
+  chance: 0.2
+  dropRatesByStat:
+    - statKey: hp_
+      chance: 0.2125
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.15
+        - statKey: atk
+          chance: 0.15
+        - statKey: def
+          chance: 0.15
+        - statKey: atk_
+          chance: 0.1
+        - statKey: def_
+          chance: 0.1
+        - statKey: enerRech_
+          chance: 0.1
+        - statKey: eleMas
+          chance: 0.1
+        - statKey: critRate_
+          chance: 0.075
+        - statKey: critDMG_
+          chance: 0.075
+    - statKey: atk_
+      chance: 0.2125
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.15
+        - statKey: atk
+          chance: 0.15
+        - statKey: def
+          chance: 0.15
+        - statKey: hp_
+          chance: 0.1
+        - statKey: def_
+          chance: 0.1
+        - statKey: enerRech_
+          chance: 0.1
+        - statKey: eleMas
+          chance: 0.1
+        - statKey: critRate_
+          chance: 0.075
+        - statKey: critDMG_
+          chance: 0.075
+    - statKey: def_
+      chance: 0.2
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.15
+        - statKey: atk
+          chance: 0.15
+        - statKey: def
+          chance: 0.15
+        - statKey: hp_
+          chance: 0.1
+        - statKey: atk_
+          chance: 0.1
+        - statKey: enerRech_
+          chance: 0.1
+        - statKey: eleMas
+          chance: 0.1
+        - statKey: critRate_
+          chance: 0.075
+        - statKey: critDMG_
+          chance: 0.075
+    - statKey: pyro_dmg_
+      chance: 0.05
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.1364
+        - statKey: atk
+          chance: 0.1364
+        - statKey: def
+          chance: 0.1364
+        - statKey: hp_
+          chance: 0.0909
+        - statKey: atk_
+          chance: 0.0909
+        - statKey: def
+          chance: 0.0909
+        - statKey: enerRech_
+          chance: 0.0909
+        - statKey: eleMas
+          chance: 0.0909
+        - statKey: critRate_
+          chance: 0.0682
+        - statKey: critDMG_
+          chance: 0.0682
+    - statKey: electro_dmg_
+      chance: 0.05
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.1364
+        - statKey: atk
+          chance: 0.1364
+        - statKey: def
+          chance: 0.1364
+        - statKey: hp_
+          chance: 0.0909
+        - statKey: atk_
+          chance: 0.0909
+        - statKey: def
+          chance: 0.0909
+        - statKey: enerRech_
+          chance: 0.0909
+        - statKey: eleMas
+          chance: 0.0909
+        - statKey: critRate_
+          chance: 0.0682
+        - statKey: critDMG_
+          chance: 0.0682
+    - statKey: cryo_dmg_
+      chance: 0.05
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.1364
+        - statKey: atk
+          chance: 0.1364
+        - statKey: def
+          chance: 0.1364
+        - statKey: hp_
+          chance: 0.0909
+        - statKey: atk_
+          chance: 0.0909
+        - statKey: def
+          chance: 0.0909
+        - statKey: enerRech_
+          chance: 0.0909
+        - statKey: eleMas
+          chance: 0.0909
+        - statKey: critRate_
+          chance: 0.0682
+        - statKey: critDMG_
+          chance: 0.0682
+    - statKey: hydro_dmg_
+      chance: 0.05
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.1364
+        - statKey: atk
+          chance: 0.1364
+        - statKey: def
+          chance: 0.1364
+        - statKey: hp_
+          chance: 0.0909
+        - statKey: atk_
+          chance: 0.0909
+        - statKey: def
+          chance: 0.0909
+        - statKey: enerRech_
+          chance: 0.0909
+        - statKey: eleMas
+          chance: 0.0909
+        - statKey: critRate_
+          chance: 0.0682
+        - statKey: critDMG_
+          chance: 0.0682
+    - statKey: anemo_dmg_
+      chance: 0.05
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.1364
+        - statKey: atk
+          chance: 0.1364
+        - statKey: def
+          chance: 0.1364
+        - statKey: hp_
+          chance: 0.0909
+        - statKey: atk_
+          chance: 0.0909
+        - statKey: def
+          chance: 0.0909
+        - statKey: enerRech_
+          chance: 0.0909
+        - statKey: eleMas
+          chance: 0.0909
+        - statKey: critRate_
+          chance: 0.0682
+        - statKey: critDMG_
+          chance: 0.0682
+    - statKey: geo_dmg_
+      chance: 0.05
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.1364
+        - statKey: atk
+          chance: 0.1364
+        - statKey: def
+          chance: 0.1364
+        - statKey: hp_
+          chance: 0.0909
+        - statKey: atk_
+          chance: 0.0909
+        - statKey: def
+          chance: 0.0909
+        - statKey: enerRech_
+          chance: 0.0909
+        - statKey: eleMas
+          chance: 0.0909
+        - statKey: critRate_
+          chance: 0.0682
+        - statKey: critDMG_
+          chance: 0.0682
+    - statKey: physical_dmg_
+      chance: 0.05
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.1364
+        - statKey: atk
+          chance: 0.1364
+        - statKey: def
+          chance: 0.1364
+        - statKey: hp_
+          chance: 0.0909
+        - statKey: atk_
+          chance: 0.0909
+        - statKey: def
+          chance: 0.0909
+        - statKey: enerRech_
+          chance: 0.0909
+        - statKey: eleMas
+          chance: 0.0909
+        - statKey: critRate_
+          chance: 0.0682
+        - statKey: critDMG_
+          chance: 0.0682
+    - statKey: eleMas
+      chance: 0.025
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.15
+        - statKey: atk
+          chance: 0.15
+        - statKey: def
+          chance: 0.15
+        - statKey: hp_
+          chance: 0.1
+        - statKey: atk_
+          chance: 0.1
+        - statKey: def_
+          chance: 0.1
+        - statKey: enerRech_
+          chance: 0.1
+        - statKey: critRate_
+          chance: 0.075
+        - statKey: critDMG_
+          chance: 0.075
+- slotKey: circlet
+  chance: 0.2
+  dropRatesByStat:
+    - statKey: hp_
+      chance: 0.22
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.15
+        - statKey: atk
+          chance: 0.15
+        - statKey: def
+          chance: 0.15
+        - statKey: atk_
+          chance: 0.1
+        - statKey: def_
+          chance: 0.1
+        - statKey: enerRech_
+          chance: 0.1
+        - statKey: eleMas
+          chance: 0.1
+        - statKey: critRate_
+          chance: 0.075
+        - statKey: critDMG_
+          chance: 0.075
+    - statKey: atk_
+      chance: 0.22
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.15
+        - statKey: atk
+          chance: 0.15
+        - statKey: def
+          chance: 0.15
+        - statKey: hp_
+          chance: 0.1
+        - statKey: def_
+          chance: 0.1
+        - statKey: enerRech_
+          chance: 0.1
+        - statKey: eleMas
+          chance: 0.1
+        - statKey: critRate_
+          chance: 0.075
+        - statKey: critDMG_
+          chance: 0.075
+    - statKey: def_
+      chance: 0.22
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.15
+        - statKey: atk
+          chance: 0.15
+        - statKey: def
+          chance: 0.15
+        - statKey: hp_
+          chance: 0.1
+        - statKey: atk_
+          chance: 0.1
+        - statKey: enerRech_
+          chance: 0.1
+        - statKey: eleMas
+          chance: 0.1
+        - statKey: critRate_
+          chance: 0.075
+        - statKey: critDMG_
+          chance: 0.075
+    - statKey: critRate_
+      chance: 0.1
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.1463
+        - statKey: atk
+          chance: 0.1463
+        - statKey: def
+          chance: 0.1463
+        - statKey: hp_
+          chance: 0.0976
+        - statKey: atk_
+          chance: 0.0976
+        - statKey: def_
+          chance: 0.0976
+        - statKey: enerRech_
+          chance: 0.0976
+        - statKey: eleMas
+          chance: 0.0976
+        - statKey: critDMG_
+          chance: 0.0732
+    - statKey: critDMG_
+      chance: 0.1
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.1463
+        - statKey: atk
+          chance: 0.1463
+        - statKey: def
+          chance: 0.1463
+        - statKey: hp_
+          chance: 0.0976
+        - statKey: atk_
+          chance: 0.0976
+        - statKey: def_
+          chance: 0.0976
+        - statKey: enerRech_
+          chance: 0.0976
+        - statKey: eleMas
+          chance: 0.0976
+        - statKey: critRate_
+          chance: 0.0732
+    - statKey: heal_
+      chance: 0.1
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.1364
+        - statKey: atk
+          chance: 0.1364
+        - statKey: def
+          chance: 0.1364
+        - statKey: hp_
+          chance: 0.0909
+        - statKey: atk_
+          chance: 0.0909
+        - statKey: def_
+          chance: 0.0909
+        - statKey: enerRech_
+          chance: 0.0909
+        - statKey: eleMas
+          chance: 0.0909
+        - statKey: critRate_
+          chance: 0.0682
+        - statKey: critDMG_
+          chance: 0.0682
+    - statKey: eleMas
+      chance: 0.04
+      dropRatesBySubstat:
+        - statKey: hp
+          chance: 0.15
+        - statKey: atk
+          chance: 0.15
+        - statKey: def
+          chance: 0.15
+        - statKey: hp_
+          chance: 0.1
+        - statKey: atk_
+          chance: 0.1
+        - statKey: def_
+          chance: 0.1
+        - statKey: enerRech_
+          chance: 0.1
+        - statKey: critRate_
+          chance: 0.075
+        - statKey: critDMG_
+          chance: 0.075
