@@ -1,0 +1,12 @@
+xpAmounts:
+  - rarity: 3
+    xp: 1260
+  - rarity: 4
+    xp: 2520
+  - rarity: 5
+    xp: 3780
+substatCounts:
+  - count: 3
+    chance: 0.8
+  - count: 4
+    chance: 0.2

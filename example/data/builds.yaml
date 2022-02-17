@@ -1,79 +1,95 @@
-- name: Albedo
-  set1: HuskOfOpulentDreams
-  artifactCriteria:
-    - type: flower
-    - type: plume
-    - type: sands
-      stat: def_
-    - type: goblet
-      stat: def_
-    - type: circlet
-      stat: def_
-- name: Bennett
-  set1: NoblesseOblige
-  artifactCriteria:
-    - type: flower
-    - type: plume
-    - type: sands
-      stat: enerRech_
-    - type: goblet
-      stat: hp_
-    - type: circlet
-      stat: heal_
-- name: Xiangling
-  set1: EmblemOfSeveredFate
-  artifactCriteria:
-    - type: flower
-    - type: plume
-    - type: sands
-      stat: enerRech_
-    - type: goblet
-      stat: pyro_dmg_
-    - type: circlet
-      stat: critDMG_
-- name: Jean
-  set1: ViridescentVenerer
-  artifactCriteria:
-    - type: flower
-    - type: plume
-    - type: sands
-      stat: atk_
-    - type: goblet
-      stat: atk_
-    - type: circlet
-      stat: atk_
-- name: Sucrose
-  set1: ViridescentVenerer
-  artifactCriteria:
-    - type: flower
-    - type: plume
-    - type: sands
-      stat: enerRech_
-    - type: goblet
-      stat: anemo_dmg_
-    - type: circlet
-      stat: eleMas
-- name: Yanfei
-  set1: EmblemOfSeveredFate
-  set2: TenacityOfTheMillelith
-  artifactCriteria:
-    - type: flower
-    - type: plume
-    - type: sands
-      stat: hp_
-    - type: goblet
-      stat: hp_
-    - type: circlet
-      stat: hp_
-- name: Chongyun
-  set1: BlizzardStrayer
-  set2: NoblesseOblige
-  artifactCriteria:
-    - type: flower
-    - type: plume
-    - type: sands
-      stat: enerRech_
-    - type: goblet
-      stat: cryo_dmg_
-    - type: circlet
-      stat: critRate_
+- key: Albedo
+  setsCriteria:
+    - setKey: HuskOfOpulentDreams
+      setBonus: 4
+  slotsCriteria:
+    - slotKey: flower
+    - slotKey: plume
+    - slotKey: sands
+      mainStatKey: def_
+    - slotKey: goblet
+      mainStatKey: def_
+    - slotKey: circlet
+      mainStatKey: def_
+- key: Bennett
+  setsCriteria:
+    - setKey: NoblesseOblige
+      setBonus: 4
+  slotsCriteria:
+    - slotKey: flower
+    - slotKey: plume
+    - slotKey: sands
+      mainStatKey: enerRech_
+    - slotKey: goblet
+      mainStatKey: hp_
+    - slotKey: circlet
+      mainStatKey: heal_
+- key: Xiangling
+  setsCriteria:
+    - setKey: EmblemOfSeveredFate
+      setBonus: 4
+  slotsCriteria:
+    - slotKey: flower
+    - slotKey: plume
+    - slotKey: sands
+      mainStatKey: enerRech_
+    - slotKey: goblet
+      mainStatKey: pyro_dmg_
+    - slotKey: circlet
+      mainStatKey: critDMG_
+- key: Jean
+  setsCriteria:
+    - setKey: ViridescentVenerer
+      setBonus: 4
+  slotsCriteria:
+    - slotKey: flower
+    - slotKey: plume
+    - slotKey: sands
+      mainStatKey: atk_
+    - slotKey: goblet
+      mainStatKey: atk_
+    - slotKey: circlet
+      mainStatKey: atk_
+- key: Sucrose
+  setsCriteria:
+    - setKey: ViridescentVenerer
+      setBonus: 4
+  slotsCriteria:
+    - slotKey: flower
+    - slotKey: plume
+    - slotKey: sands
+      mainStatKey: enerRech_
+    - slotKey: goblet
+      mainStatKey: anemo_dmg_
+    - slotKey: circlet
+      mainStatKey: eleMas
+- key: Yanfei
+  setsCriteria:
+    - setKey: EmblemOfSeveredFate
+      setBonus: 2
+    - setKey: TenacityOfTheMillelith
+      setBonus: 2
+  slotsCriteria:
+    - slotKey: flower
+    - slotKey: plume
+    - slotKey: sands
+      mainStatKey: hp_
+    - slotKey: goblet
+      mainStatKey: hp_
+    - slotKey: circlet
+      mainStatKey: hp_
+- key: Chongyun
+  setsCriteria:
+    - setKey: BlizzardStrayer
+      setBonus: 2
+    - setKey: NoblesseOblige
+      setBonus: 2
+  slotsCriteria:
+    - slotKey: flower
+    - slotKey: plume
+    - slotKey: sands
+      mainStatKey: enerRech_
+    - slotKey: goblet
+      mainStatKey: cryo_dmg_
+    - slotKey: circlet
+      mainStatKey: critRate_
