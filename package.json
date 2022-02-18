@@ -13,9 +13,9 @@
     "type": "git",
     "url": "https://github.com/afrasso/genshin-artifact-simulator.git"
   },
-  "version": "0.2.2",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "version": "0.2.3",
+  "main": "out/src/index.js",
+  "types": "out/src/index.d.ts",
   "scripts": {
     "build": "node ./compileYaml.js && tsc",
     "lint": "eslint ./src",
