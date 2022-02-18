@@ -148,7 +148,7 @@ export interface GenshinOpenOpjectDescription {
   artifacts: Artifact[];
 }
 
-export interface MatchingArtifactsResult {
-  artifacts: Artifact[];
-  missingArtifactSlotsCriteria: ArtifactSlotCriteria[];
+export interface SimulationResult {
+  totalResinSpent: number;
+  builds: { key: string; resinSpent?: number }[];
 }

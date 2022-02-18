@@ -5,6 +5,7 @@ import {
   ArtifactSet,
   Build,
   GenshinOpenOpjectDescription,
+  SimulationResult,
 } from "./types";
 
 import { artifactSets } from "./loadData";
@@ -19,7 +20,7 @@ const initialize = ({
 }: {
   builds: Build[];
   artifacts: Artifact[];
-}) => {
+}): void => {
   _.forEach(builds, (build) => {
     delete build.artifacts;
     delete build.missingSlotsCriteria;
@@ -57,7 +58,7 @@ const simulateOnce = ({
 }: {
   builds: Build[];
   artifacts: Artifact[];
-}) => {
+}): SimulationResult => {
   initialize({ builds, artifacts });
   _.forEach(builds, (build) => {
     findMatchingArtifacts({ build, artifacts });
@@ -98,8 +99,8 @@ const simulateOnce = ({
   });
   return {
     totalResinSpent: _.sumBy(builds, (build) => (build as Build).resinSpent),
-    builds: _.map(builds, (build) => _.pick(build, ["name", "resinSpent"])),
-  };
+    builds: _.map(builds, (build) => _.pick(build, ["key", "resinSpent"])),
+  } as SimulationResult;
 };
 
 export default {
@@ -111,7 +112,7 @@ export default {
     builds: Build[];
     goodData: GenshinOpenOpjectDescription;
     runs: number;
-  }) => {
+  }): SimulationResult[] => {
     return _.times(runs, () =>
       simulateOnce({
         builds: _.cloneDeep(builds),

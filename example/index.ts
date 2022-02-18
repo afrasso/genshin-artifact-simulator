@@ -8,13 +8,11 @@ import simulator from "../src/index";
 import goodData from "../example/compiledData/good.json";
 import builds from "../example/compiledData/builds.json";
 
-console.log(new Date());
 const simulations = simulator.simulate({
   builds: builds as Build[],
   goodData: goodData as GenshinOpenOpjectDescription,
   runs: 1000,
 });
-console.log(new Date());
 
 const percentiles = [5, 10, 25, 50, 75, 90, 95];
 const data = percentile(

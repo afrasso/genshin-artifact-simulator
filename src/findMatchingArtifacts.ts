@@ -5,7 +5,6 @@ import {
   ArtifactSetCriteria,
   ArtifactSlotCriteria,
   Build,
-  MatchingArtifactsResult,
 } from "./types";
 
 import artifactMatchesCriteria from "./artifactMatchesCriteria";
@@ -54,7 +53,7 @@ const updateArtifactSetCount = ({
 }: {
   artifact: Artifact;
   artifactSetCounts?: { key: string; count: number }[];
-}) => {
+}): void => {
   let setCount = _.find(
     artifactSetCounts,
     (setCount) => setCount.key === artifact.setKey
@@ -65,6 +64,11 @@ const updateArtifactSetCount = ({
   }
   setCount.count += 1;
 };
+
+interface MatchingArtifactsResult {
+  artifacts: Artifact[];
+  missingArtifactSlotsCriteria: ArtifactSlotCriteria[];
+}
 
 const findRemainingArtifacts = ({
   artifacts,
