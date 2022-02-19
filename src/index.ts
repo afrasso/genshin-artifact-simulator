@@ -104,6 +104,7 @@ const simulateOnce = ({
 };
 
 export * from "./types";
+export * from "./loadData";
 
 export const simulate = ({
   builds,

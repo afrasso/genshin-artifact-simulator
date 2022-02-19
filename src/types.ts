@@ -1,8 +1,8 @@
 export interface Artifact {
   setKey: string;
-  slotKey: ArtifactSlot;
+  slotKey: ArtifactSlotKey;
   rarity: number;
-  mainStatKey: ArtifactStat;
+  mainStatKey: ArtifactStatKey;
   substats?: ArtifactSubstat[];
   build?: Build;
 }
@@ -26,7 +26,7 @@ export interface ArtifactDropCount {
 }
 
 export interface ArtifactDropRatesForSlot {
-  slotKey: ArtifactSlot;
+  slotKey: ArtifactSlotKey;
   chance: number;
   dropRatesByStat: ArtifactDropRatesForStat[];
   rngMin?: number;
@@ -34,7 +34,7 @@ export interface ArtifactDropRatesForSlot {
 }
 
 export interface ArtifactDropRatesForStat {
-  statKey: ArtifactStat;
+  statKey: ArtifactStatKey;
   chance: number;
   dropRatesBySubstat: ArtifactDropRatesForSubstat[];
   rngMin?: number;
@@ -42,7 +42,7 @@ export interface ArtifactDropRatesForStat {
 }
 
 export interface ArtifactDropRatesForSubstat {
-  statKey: ArtifactStat;
+  statKey: ArtifactStatKey;
   chance: number;
   rngMin?: number;
   rngMax?: number;
@@ -73,7 +73,7 @@ export interface ArtifactSetCriteria {
   set?: ArtifactSet;
 }
 
-export enum ArtifactSlot {
+export enum ArtifactSlotKey {
   flower = "flower",
   plume = "plume",
   sands = "sands",
@@ -82,8 +82,8 @@ export enum ArtifactSlot {
 }
 
 export interface ArtifactSlotCriteria {
-  slotKey: ArtifactSlot;
-  mainStatKey?: ArtifactStat;
+  slotKey: ArtifactSlotKey;
+  mainStatKey?: ArtifactStatKey;
   minValue?: number;
   substats?: ArtifactSubstatCriteria[];
 }
@@ -93,7 +93,7 @@ export enum ArtifactSource {
   domain = "domain",
 }
 
-export enum ArtifactStat {
+export enum ArtifactStatKey {
   anemo_dmg_ = "anemo_dmg_",
   atk = "atk",
   atk_ = "atk_",
@@ -115,7 +115,7 @@ export enum ArtifactStat {
 }
 
 export interface ArtifactSubstat {
-  key: ArtifactStat;
+  key: ArtifactStatKey;
 }
 
 export interface ArtifactSubstatCount {
@@ -126,7 +126,7 @@ export interface ArtifactSubstatCount {
 }
 
 export interface ArtifactSubstatCriteria {
-  key: ArtifactStat;
+  key: ArtifactStatKey;
   minValue?: number;
 }
 
@@ -136,7 +136,8 @@ export interface ArtifactXpAmount {
 }
 
 export interface Build {
-  key: string;
+  id: string;
+  name: string;
   setsCriteria: ArtifactSetCriteria[];
   slotsCriteria: ArtifactSlotCriteria[];
   artifacts?: Artifact[];

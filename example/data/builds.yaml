@@ -1,4 +1,4 @@
-- key: Albedo
+- name: Albedo (Off-field DPS)
   setsCriteria:
     - setKey: HuskOfOpulentDreams
       setBonus: 4
@@ -11,7 +11,7 @@
       mainStatKey: def_
     - slotKey: circlet
       mainStatKey: def_
-- key: Bennett
+- name: Bennett (Support)
   setsCriteria:
     - setKey: NoblesseOblige
       setBonus: 4
@@ -24,7 +24,7 @@
       mainStatKey: hp_
     - slotKey: circlet
       mainStatKey: heal_
-- key: Xiangling
+- name: Xiangling (Off-field DPS)
   setsCriteria:
     - setKey: EmblemOfSeveredFate
       setBonus: 4
@@ -37,7 +37,7 @@
       mainStatKey: pyro_dmg_
     - slotKey: circlet
       mainStatKey: critDMG_
-- key: Jean
+- name: Jean (Healer)
   setsCriteria:
     - setKey: ViridescentVenerer
       setBonus: 4
@@ -50,7 +50,7 @@
       mainStatKey: atk_
     - slotKey: circlet
       mainStatKey: atk_
-- key: Sucrose
+- name: Sucrose (Support)
   setsCriteria:
     - setKey: ViridescentVenerer
       setBonus: 4
@@ -63,7 +63,7 @@
       mainStatKey: anemo_dmg_
     - slotKey: circlet
       mainStatKey: eleMas
-- key: Yanfei
+- name: Yanfei (Tank)
   setsCriteria:
     - setKey: EmblemOfSeveredFate
       setBonus: 2
@@ -78,7 +78,7 @@
       mainStatKey: hp_
     - slotKey: circlet
       mainStatKey: hp_
-- key: Chongyun
+- name: Chongyun (Off-field DPS)
   setsCriteria:
     - setKey: BlizzardStrayer
       setBonus: 2

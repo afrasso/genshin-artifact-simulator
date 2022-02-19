@@ -187,7 +187,7 @@ const findMatchingArtifacts = ({
   let matchingArtifactsResult = findRemainingArtifacts({
     artifacts: _.filter(
       artifacts,
-      (artifact) => !artifact.build || artifact.build.key === build.key
+      (artifact) => !artifact.build || artifact.build.id === build.id
     ),
     artifactSlotsCriteria: build.slotsCriteria,
     artifactSetsCriteria: build.setsCriteria,
@@ -196,7 +196,7 @@ const findMatchingArtifacts = ({
     matchingArtifactsResult = findRemainingArtifacts({
       artifacts: _.filter(
         artifacts,
-        (artifact) => !artifact.build || artifact.build.key === build.key
+        (artifact) => !artifact.build || artifact.build.id === build.id
       ),
       artifactSlotsCriteria: build.slotsCriteria,
       artifactSetsCriteria: build.setsCriteria,
