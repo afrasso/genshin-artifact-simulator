@@ -121,3 +121,5 @@ export const simulate = ({
     })
   );
 };
+
+export default simulate;
