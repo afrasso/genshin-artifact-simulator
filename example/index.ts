@@ -3,12 +3,12 @@ import percentile from "percentile";
 
 import { Build, GenshinOpenOpjectDescription } from "../src/types";
 
-import simulator from "../src/index";
+import simulate from "../src/index";
 
 import goodData from "../example/compiledData/good.json";
 import builds from "../example/compiledData/builds.json";
 
-const simulations = simulator.simulate({
+const simulations = simulate({
   builds: builds as Build[],
   goodData: goodData as GenshinOpenOpjectDescription,
   runs: 1000,
