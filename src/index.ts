@@ -103,21 +103,21 @@ const simulateOnce = ({
   } as SimulationResult;
 };
 
-export default {
-  simulate: ({
-    builds,
-    goodData,
-    runs,
-  }: {
-    builds: Build[];
-    goodData: GenshinOpenOpjectDescription;
-    runs: number;
-  }): SimulationResult[] => {
-    return _.times(runs, () =>
-      simulateOnce({
-        builds: _.cloneDeep(builds),
-        artifacts: _.cloneDeep(goodData.artifacts),
-      })
-    );
-  },
+export * from "./types";
+
+export const simulate = ({
+  builds,
+  goodData,
+  runs,
+}: {
+  builds: Build[];
+  goodData: GenshinOpenOpjectDescription;
+  runs: number;
+}): SimulationResult[] => {
+  return _.times(runs, () =>
+    simulateOnce({
+      builds: _.cloneDeep(builds),
+      artifacts: _.cloneDeep(goodData.artifacts),
+    })
+  );
 };
