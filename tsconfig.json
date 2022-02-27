@@ -5,6 +5,9 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "out",
+    "plugins": [
+      { "transform": "typescript-is/lib/transform-inline/transformer" }
+    ],
     "resolveJsonModule": true,
     "sourceMap": true,
     "target": "es5",

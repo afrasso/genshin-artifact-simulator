@@ -1,7 +1,7 @@
 import _ from "lodash";
 import { Artifact, ArtifactSlotCriteria } from "./types";
 
-export default ({
+const artifactMatchesCriteria = ({
   artifact,
   artifactSlotCriteria,
   setKey,
@@ -37,3 +37,5 @@ export default ({
   });
   return true;
 };
+
+export default artifactMatchesCriteria;

@@ -41,8 +41,8 @@ const getNumArtifactsFoundNotForSetCriteria = ({
         artifactSetsCriteria,
         (setCriteria) => setCriteria.setKey === setCount.key
       )
-        ? setCount.count
-        : 0
+        ? 0
+        : setCount.count
     )
   );
 };
@@ -75,12 +75,14 @@ const findRemainingArtifacts = ({
   artifactSlotsCriteria,
   artifactSetsCriteria,
   artifactSetCounts = [],
+  numTotalArtifactSlotsCriteria,
   includeNoSet = false,
 }: {
   artifacts: Artifact[];
   artifactSlotsCriteria: ArtifactSlotCriteria[];
   artifactSetsCriteria: ArtifactSetCriteria[];
   artifactSetCounts?: { key: string; count: number }[];
+  numTotalArtifactSlotsCriteria: number;
   includeNoSet?: boolean;
 }): MatchingArtifactsResult => {
   if (_.size(artifactSlotsCriteria) === 0) {
@@ -107,7 +109,8 @@ const findRemainingArtifacts = ({
         artifacts,
         artifactSlotsCriteria: remainingArtifactSlotsCriteria,
         artifactSetsCriteria,
-        artifactSetCounts,
+        artifactSetCounts: _.cloneDeep(artifactSetCounts),
+        numTotalArtifactSlotsCriteria,
         includeNoSet,
       });
       if (artifact) {
@@ -128,7 +131,8 @@ const findRemainingArtifacts = ({
     (result) => !_.isNil(result)
   );
   if (
-    5 - getNumArtifactsRequiredForSetCriteria({ artifactSetsCriteria }) <
+    numTotalArtifactSlotsCriteria -
+      getNumArtifactsRequiredForSetCriteria({ artifactSetsCriteria }) >
     getNumArtifactsFoundNotForSetCriteria({
       artifactSetsCriteria,
       artifactSetCounts,
@@ -150,7 +154,8 @@ const findRemainingArtifacts = ({
       artifacts,
       artifactSlotsCriteria: remainingArtifactSlotsCriteria,
       artifactSetsCriteria,
-      artifactSetCounts,
+      artifactSetCounts: _.cloneDeep(artifactSetCounts),
+      numTotalArtifactSlotsCriteria,
       includeNoSet,
     });
     if (artifact) {
@@ -191,8 +196,14 @@ const findMatchingArtifacts = ({
     ),
     artifactSlotsCriteria: build.slotsCriteria,
     artifactSetsCriteria: build.setsCriteria,
+    numTotalArtifactSlotsCriteria: build.slotsCriteria.length,
   });
-  if (matchingArtifactsResult.artifacts.length === 4) {
+  if (
+    matchingArtifactsResult.artifacts.length ===
+    getNumArtifactsRequiredForSetCriteria({
+      artifactSetsCriteria: build.setsCriteria,
+    })
+  ) {
     matchingArtifactsResult = findRemainingArtifacts({
       artifacts: _.filter(
         artifacts,
@@ -200,6 +211,7 @@ const findMatchingArtifacts = ({
       ),
       artifactSlotsCriteria: build.slotsCriteria,
       artifactSetsCriteria: build.setsCriteria,
+      numTotalArtifactSlotsCriteria: build.slotsCriteria.length,
       includeNoSet: true,
     });
   }

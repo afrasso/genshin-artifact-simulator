@@ -15,6 +15,8 @@ import {
   bossArtifactSets,
 } from "./loadData";
 
+import rng from "./rng";
+
 const farmArtifacts = ({
   set = _.head(artifactSets),
 }: {
@@ -25,17 +27,18 @@ const farmArtifacts = ({
     (dropForSource) => dropForSource.source === set.source
   );
   const drop = _.find(dropsForSource.drops, (drop) => drop.rarity === 5);
-  const dropRng = Math.random();
+  const dropCountRng = rng("dropCount");
   const dropNum = _.find(
     drop.dropCounts,
-    (dropCount) => dropRng >= dropCount.rngMin && dropRng < dropCount.rngMax
+    (dropCount) =>
+      dropCountRng >= dropCount.rngMin && dropCountRng < dropCount.rngMax
   ).num;
   return {
     artifacts: _.times(dropNum, () => {
       const possibleSets =
         set.source === "domain" ? set.domain.sets : bossArtifactSets;
       return generateArtifact({
-        set: possibleSets[Math.floor(_.size(possibleSets) * Math.random())],
+        set: possibleSets[Math.floor(_.size(possibleSets) * rng("set"))],
       });
     }),
     resinCost: set.source === "domain" ? 20 : 40,
@@ -43,9 +46,9 @@ const farmArtifacts = ({
 };
 
 const generateArtifact = ({ set }: { set: ArtifactSet }): Artifact => {
-  const slotRng = Math.random();
-  const statRng = Math.random();
-  const substatCountRng = Math.random();
+  const slotRng = rng("slot");
+  const statRng = rng("stat");
+  const substatCountRng = rng("substatCount");
   const dropRatesForSlot = _.find(
     artifactDropRatesBySlot,
     (dropRatesForSlot) =>
@@ -79,7 +82,7 @@ const generateSubstat = ({
 }: {
   dropRatesBySubstat: ArtifactDropRatesForSubstat[];
 }): ArtifactSubstat => {
-  const substatRng = Math.random();
+  const substatRng = rng("substat");
   const statKey = _.find(
     dropRatesBySubstat,
     (dropRatesForSubstat) =>

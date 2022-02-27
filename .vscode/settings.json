@@ -1,6 +1,7 @@
 // Place your settings in this file to overwrite default and user settings.
 {
   "editor.tabSize": 2,
+  "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
@@ -10,5 +11,5 @@
     "**/coverage": true,
     "*.log": true
   },
-  "files.eol": "\n"
+  "jest.autoRun": "off"
 }

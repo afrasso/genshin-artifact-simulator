@@ -1,8 +1,10 @@
 import _ from "lodash";
+import { assertType } from "typescript-is";
 
 import {
   Artifact,
   ArtifactSet,
+  ArtifactSlotKey,
   Build,
   GenshinOpenOpjectDescription,
   SimulationResult,
@@ -14,6 +16,69 @@ import artifactMatchesCriteria from "./artifactMatchesCriteria";
 import farmArtifacts from "./farmArtifacts";
 import findMatchingArtifacts from "./findMatchingArtifacts";
 
+const validateBuild = ({ build }: { build: Build }): void => {
+  assertType<Build>(build);
+  if (!_.isEmpty(build.slotsCriteria)) {
+    const slotKeyCounts = _.countBy(
+      build.slotsCriteria,
+      (slotCriteria) => slotCriteria.slotKey
+    );
+    const slotKey = _.findKey(slotKeyCounts, (count) => count > 1);
+    if (!_.isNil(slotKey)) {
+      throw `For build "${build.id}" found ${slotKeyCounts[slotKey]} slot criteria for slot key "${slotKey}".`;
+    }
+  }
+};
+
+const validateBuilds = ({ builds }: { builds: Build[] }): void => {
+  const buildIdCounts = _.countBy(builds, (build) => build.id);
+  const buildId = _.findKey(buildIdCounts, (count) => count > 1);
+  if (!_.isNil(buildId)) {
+    throw `Multiple specified builds had the same id: ${buildId}`;
+  }
+  _.forEach(builds, (build) => validateBuild({ build }));
+};
+
+const fixMissingSlotCriteria = ({
+  build,
+  slotKey,
+}: {
+  build: Build;
+  slotKey: ArtifactSlotKey;
+}): void => {
+  if (
+    _.isNil(
+      _.find(
+        build.slotsCriteria,
+        (slotCriteria) => slotCriteria.slotKey === slotKey
+      )
+    )
+  ) {
+    build.slotsCriteria.push({ slotKey });
+  }
+};
+
+const initializeBuild = ({ build }: { build: Build }): void => {
+  delete build.artifacts;
+  delete build.missingSlotsCriteria;
+  build.resinSpent = 0;
+  _.forEach(build.setsCriteria, (setCriteria) => {
+    setCriteria.set = _.find(
+      artifactSets,
+      (set) => set.key === setCriteria.setKey
+    );
+  });
+  fixMissingSlotCriteria({ build, slotKey: ArtifactSlotKey.flower });
+  fixMissingSlotCriteria({ build, slotKey: ArtifactSlotKey.plume });
+  fixMissingSlotCriteria({ build, slotKey: ArtifactSlotKey.sands });
+  fixMissingSlotCriteria({ build, slotKey: ArtifactSlotKey.goblet });
+  fixMissingSlotCriteria({ build, slotKey: ArtifactSlotKey.circlet });
+};
+
+const initializeArtifact = ({ artifact }: { artifact: Artifact }): void => {
+  delete artifact.build;
+};
+
 const initialize = ({
   builds,
   artifacts,
@@ -21,20 +86,8 @@ const initialize = ({
   builds: Build[];
   artifacts: Artifact[];
 }): void => {
-  _.forEach(builds, (build) => {
-    delete build.artifacts;
-    delete build.missingSlotsCriteria;
-    build.resinSpent = 0;
-    _.forEach(build.setsCriteria, (setCriteria) => {
-      setCriteria.set = _.find(
-        artifactSets,
-        (set) => set.key === setCriteria.setKey
-      );
-    });
-  });
-  _.forEach(artifacts, (artifact) => {
-    delete artifact.build;
-  });
+  _.forEach(builds, (build) => initializeBuild({ build }));
+  _.forEach(artifacts, (artifact) => initializeArtifact({ artifact }));
 };
 
 const farm = ({
@@ -62,7 +115,7 @@ const simulateOnce = ({
   initialize({ builds, artifacts });
   _.forEach(builds, (build) => {
     findMatchingArtifacts({ build, artifacts });
-    while (_.size(build.artifacts) < 5) {
+    while (_.size(build.artifacts) < build.slotsCriteria.length) {
       const setCriteria = _.find(
         build.setsCriteria,
         (setCriteria) =>
@@ -106,15 +159,20 @@ const simulateOnce = ({
 export * from "./types";
 export * from "./loadData";
 
-export const simulate = ({
-  builds,
-  goodData,
-  runs,
-}: {
-  builds: Build[];
-  goodData: GenshinOpenOpjectDescription;
-  runs: number;
-}): SimulationResult[] => {
+const simulate = (
+  {
+    builds = [],
+    goodData = { artifacts: [] },
+    runs = 1,
+  }: {
+    builds?: Build[];
+    goodData?: GenshinOpenOpjectDescription;
+    runs?: number;
+  } = { builds: [], goodData: { artifacts: [] }, runs: 1 }
+): SimulationResult[] => {
+  validateBuilds({ builds });
+  assertType<GenshinOpenOpjectDescription>(goodData);
+  assertType<number>(runs);
   return _.times(runs, () =>
     simulateOnce({
       builds: _.cloneDeep(builds),
