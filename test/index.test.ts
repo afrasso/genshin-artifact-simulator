@@ -128,6 +128,8 @@ test("Calling simulate with an empty build and the wrong artifacts", () => {
     },
     {
       key: "set",
+      // This should result in only the second of the two artifact sets being
+      // dropped by the domain. In this case, that's RetracingBolide.
       values: [0.75],
     },
     {
@@ -168,6 +170,36 @@ test("Calling simulate with an empty build and the wrong artifacts", () => {
   expect(numRngCallsForKey("dropCount")).toBe(4);
   expect(numRngCallsForKey("set")).toBe(4);
   expect(numRngCallsForKey("slot")).toBe(4);
+});
+
+test("Calling simulate with a four-piece set restriction", () => {
+  initializeMockRngsByKey([
+    {
+      key: "dropCount",
+      values: [0.5],
+    },
+    {
+      key: "set",
+      // This should result in only the second of the two artifact sets being
+      // dropped by the domain. In this case, that's OceanHuedClam.
+      values: [0.75],
+    },
+    {
+      key: "slot",
+      values: [0.05, 0.15, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 0.85, 0.95],
+    },
+  ]);
+  const build = generateBuild();
+  build.setsCriteria.push({
+    setKey: "OceanHuedClam",
+    setBonus: ArtifactSetBonus.fourPiece,
+  });
+  expect(simulate({ builds: [build] })).toEqual([
+    { builds: [{ resinSpent: 180 }], totalResinSpent: 180 },
+  ]);
+  expect(numRngCallsForKey("dropCount")).toBe(9);
+  expect(numRngCallsForKey("set")).toBe(9);
+  expect(numRngCallsForKey("slot")).toBe(9);
 });
 
 test("Calling simulate with a build that has multiple slots criteria with the same slot key", () => {

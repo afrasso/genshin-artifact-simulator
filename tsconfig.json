@@ -6,7 +6,10 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "out",
     "plugins": [
-      { "transform": "typescript-is/lib/transform-inline/transformer" }
+      {
+        "transform": "typescript-is/lib/transform-inline/transformer",
+        "disallowSuperfluousObjectProperties": true
+      }
     ],
     "resolveJsonModule": true,
     "sourceMap": true,
