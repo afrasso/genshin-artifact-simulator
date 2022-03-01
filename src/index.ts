@@ -1,5 +1,4 @@
 import _ from "lodash";
-import { assertType } from "typescript-is";
 
 import {
   Artifact,
@@ -17,7 +16,6 @@ import farmArtifacts from "./farmArtifacts";
 import findMatchingArtifacts from "./findMatchingArtifacts";
 
 const validateBuild = ({ build }: { build: Build }): void => {
-  assertType<Build>(build);
   if (!_.isEmpty(build.slotsCriteria)) {
     const slotKeyCounts = _.countBy(
       build.slotsCriteria,
@@ -171,8 +169,6 @@ const simulate = (
   } = { builds: [], goodData: { artifacts: [] }, runs: 1 }
 ): SimulationResult[] => {
   validateBuilds({ builds });
-  assertType<GenshinOpenOpjectDescription>(goodData);
-  assertType<number>(runs);
   return _.times(runs, () =>
     simulateOnce({
       builds: _.cloneDeep(builds),
